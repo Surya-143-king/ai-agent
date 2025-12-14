@@ -1,0 +1,984 @@
+{
+  "summary": {
+    "total_providers": 200,
+    "validated_providers": 1,
+    "high_confidence_providers": 0,
+    "needs_manual_review": 200,
+    "validation_rate": 0.5,
+    "auto_validation_rate": 0.0
+  },
+  "statistics": {
+    "average_confidence_score": 0.465,
+    "average_quality_score": 0.433,
+    "average_completeness": 0.994,
+    "priority_distribution": {
+      "high": 199,
+      "medium": 1,
+      "low": 0
+    },
+    "status_distribution": {
+      "needs_review": 200
+    }
+  },
+  "high_priority_providers": [
+    {
+      "npi": "9562535803",
+      "name": "Dr. Michael Martinez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "9562535803"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "2246071071",
+      "name": "Dr. Robert Davis",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "2246071071"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "5503147198",
+      "name": "Dr. Susan Brown",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "5503147198"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "3792891468",
+      "name": "Dr. David Williams",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "3792891468"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "9232490812",
+      "name": "Dr. Michael Garcia",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "9232490812"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "9562784133",
+      "name": "Dr. Michael Martinez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "9562784133"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "3155286057",
+      "name": "Dr. Joseph Jones",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "3155286057"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "6895301327",
+      "name": "Dr. Patricia Gonzalez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "6895301327"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "8026067298",
+      "name": "Dr. Robert Martinez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "8026067298"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "8391522181",
+      "name": "Dr. Barbara Hernandez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "8391522181"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "1403238618",
+      "name": "Dr. Elizabeth Gonzalez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "1403238618"
+        },
+        {
+          "type": "suspicious_phone",
+          "severity": "high",
+          "description": "Phone number appears to be placeholder",
+          "value": "111-111-1111"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "8904427463",
+      "name": "Dr. Elizabeth Wilson",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "8904427463"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "2826791204",
+      "name": "Dr. Robert Hernandez",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "2826791204"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "4718843583",
+      "name": "Dr. Robert Smith",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "4718843583"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "1178869058",
+      "name": "Dr. James Brown",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "1178869058"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "6966982911",
+      "name": "Dr. David Brown",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "6966982911"
+        }
+      ],
+      "score": 0.4060389610389609,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "1186544278",
+      "name": "Dr. Jennifer Davis",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "1186544278"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "4074391024",
+      "name": "Dr. Michael Davis",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "4074391024"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "2491011545",
+      "name": "Dr. Richard Garcia",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "2491011545"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    },
+    {
+      "npi": "1440417338",
+      "name": "Dr. William Johnson",
+      "issues": [
+        {
+          "type": "low_confidence",
+          "severity": "high",
+          "description": "Validation confidence score (0.46) below threshold",
+          "value": 0.4636363636363636
+        },
+        {
+          "type": "npi_validation_failed",
+          "severity": "critical",
+          "description": "NPI validation failed",
+          "value": "1440417338"
+        },
+        {
+          "type": "suspicious_phone",
+          "severity": "high",
+          "description": "Phone number appears to be placeholder",
+          "value": "111-111-1111"
+        }
+      ],
+      "score": 0.43331168831168826,
+      "recommendations": [
+        "\u26a0\ufe0f URGENT: Requires immediate manual review",
+        "Re-validate provider information from primary sources",
+        "Verify NPI number with provider"
+      ]
+    }
+  ],
+  "validation_trends": {
+    "common_issues": {
+      "low_confidence": 199,
+      "npi_validation_failed": 199,
+      "suspicious_phone": 11
+    },
+    "common_missing_fields": {}
+  },
+  "actionable_items": [
+    {
+      "priority": "critical",
+      "provider_npi": "9562535803",
+      "provider_name": "Dr. Michael Martinez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2246071071",
+      "provider_name": "Dr. Robert Davis",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5503147198",
+      "provider_name": "Dr. Susan Brown",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3792891468",
+      "provider_name": "Dr. David Williams",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "9232490812",
+      "provider_name": "Dr. Michael Garcia",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "9562784133",
+      "provider_name": "Dr. Michael Martinez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3155286057",
+      "provider_name": "Dr. Joseph Jones",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6895301327",
+      "provider_name": "Dr. Patricia Gonzalez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "8026067298",
+      "provider_name": "Dr. Robert Martinez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "8391522181",
+      "provider_name": "Dr. Barbara Hernandez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1403238618",
+      "provider_name": "Dr. Elizabeth Gonzalez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "8904427463",
+      "provider_name": "Dr. Elizabeth Wilson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2826791204",
+      "provider_name": "Dr. Robert Hernandez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4718843583",
+      "provider_name": "Dr. Robert Smith",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1178869058",
+      "provider_name": "Dr. James Brown",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6966982911",
+      "provider_name": "Dr. David Brown",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1186544278",
+      "provider_name": "Dr. Jennifer Davis",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4074391024",
+      "provider_name": "Dr. Michael Davis",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2491011545",
+      "provider_name": "Dr. Richard Garcia",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1440417338",
+      "provider_name": "Dr. William Johnson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1634478338",
+      "provider_name": "Dr. Jessica Thomas",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "7834559837",
+      "provider_name": "Dr. James Johnson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5103372843",
+      "provider_name": "Dr. James Lopez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3373639432",
+      "provider_name": "Dr. Barbara Johnson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4610333791",
+      "provider_name": "Dr. John Brown",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4795944512",
+      "provider_name": "Dr. Susan Johnson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4035186083",
+      "provider_name": "Dr. James Martinez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1689857648",
+      "provider_name": "Dr. Susan Williams",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "7240579899",
+      "provider_name": "Dr. Robert Brown",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "8363719419",
+      "provider_name": "Dr. David Thomas",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5976045012",
+      "provider_name": "Dr. Susan Miller",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2487508189",
+      "provider_name": "Dr. Barbara Anderson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "4658622647",
+      "provider_name": "Dr. Patricia Jones",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1710697368",
+      "provider_name": "Dr. Jennifer Hernandez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5242428080",
+      "provider_name": "Dr. David Jones",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "9211589132",
+      "provider_name": "Dr. John Gonzalez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3582784759",
+      "provider_name": "Dr. Robert Davis",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3722037150",
+      "provider_name": "Dr. Barbara Wilson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6448940245",
+      "provider_name": "Dr. Robert Smith",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "1622680238",
+      "provider_name": "Dr. John Garcia",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "3187698066",
+      "provider_name": "Dr. Jessica Johnson",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2888537414",
+      "provider_name": "Dr. David Garcia",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2948212996",
+      "provider_name": "Dr. Joseph Smith",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5030416412",
+      "provider_name": "Dr. William Garcia",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "5335112553",
+      "provider_name": "Dr. James Jones",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "2447755697",
+      "provider_name": "Dr. Richard Gonzalez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6087864561",
+      "provider_name": "Dr. Elizabeth Jones",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6830307413",
+      "provider_name": "Dr. James Lopez",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "9788226687",
+      "provider_name": "Dr. James Williams",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    },
+    {
+      "priority": "critical",
+      "provider_npi": "6405843486",
+      "provider_name": "Dr. Linda Miller",
+      "action": "Immediate verification required",
+      "details": [
+        "NPI validation failed"
+      ]
+    }
+  ],
+  "generated_at": "2025-10-27T16:52:04.408513",
+  "execution_metrics": {
+    "total_providers": 200,
+    "total_processing_time": 310.5535547733307,
+    "average_processing_time": 1.5527677738666534,
+    "timestamp": "2025-10-27T16:52:04.408513"
+  }
+}

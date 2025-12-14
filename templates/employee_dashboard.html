@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Dashboard - Healthcare Management</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    body { background-color: #f8f9fa; }
+    .navbar { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .stat-card { transition: transform 0.2s; }
+    .stat-card:hover { transform: translateY(-5px); }
+    .auto-update-badge { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.6} }
+    .table-container { max-height: 600px; overflow-y: auto; }
+    .admin-controls { background: #fff7ec; border-radius: 8px; padding: 12px; margin-bottom: 16px; }
+    .action-icons .btn { padding: .25rem .45rem; }
+    .sticky-top thead { background: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand">
+        <i class="bi bi-hospital me-2"></i> Healthcare Management - Employee Portal
+      </span>
+      <div class="d-flex align-items-center">
+                <span class="text-white me-3">Welcome, {{ user.name }}</span>
+                <span class="badge bg-warning text-dark me-3">ADMIN</span>
+                <span class="badge bg-success auto-update-badge me-3">
+                    <i class="bi bi-arrow-repeat"></i> Auto-update: 20s
+                </span>
+                <span class="text-white me-3" id="lastUpdated">Loading...</span>
+                <a href="/logout" class="btn btn-light btn-sm">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid py-4">
+<!-- Admin Section -->
+        <div class="admin-section p-3 mb-4 rounded">
+            <h5><i class="bi bi-shield-lock me-2"></i>Admin Controls</h5>
+            <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-warning btn-sm" onclick="manualUpdate()">
+                    <i class="bi bi-arrow-repeat me-1"></i>Manual Data Update
+                </button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#manageUsersModal">
+                    <i class="bi bi-people me-1"></i>Manage Users
+                </button>
+                <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                    <i class="bi bi-person-plus me-1"></i>Add Employee
+                </button>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#auditLogModal">
+                    <i class="bi bi-journal-text me-1"></i>Audit Logs
+                </button>
+            </div>
+        </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card stat-card text-white bg-primary">
+          <div class="card-body">
+            <h6>Total Employees</h6>
+            <h2 id="totalEmployees">-</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card stat-card text-white bg-success">
+          <div class="card-body">
+            <h6>Active Employees</h6>
+            <h2 id="activeEmployees">-</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card stat-card text-white bg-info">
+          <div class="card-body">
+            <h6>Total Patients</h6>
+            <h2 id="totalPatients">-</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card stat-card text-white bg-warning">
+          <div class="card-body">
+            <h6>Active Patients</h6>
+            <h2 id="activePatients">-</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#employees"><i class="bi bi-people"></i> Employees (1000)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#patients"><i class="bi bi-heart-pulse"></i> Patients (1000)</a>
+      </li>
+    </ul>
+
+    <div class="tab-content bg-white p-3">
+      <!-- Employees Tab -->
+      <div id="employees" class="tab-pane fade show active">
+        <div class="d-flex justify-content-between mb-3">
+          <input type="text" class="form-control w-25" id="searchEmployees" placeholder="Search employees...">
+          <div>
+            <button class="btn btn-success me-2" onclick="exportData('employees','excel')"><i class="bi bi-file-excel"></i> Export Excel</button>
+            <button class="btn btn-info" onclick="exportData('employees','csv')"><i class="bi bi-filetype-csv"></i> Export CSV</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="table table-hover table-sm">
+            <thead class="table-light sticky-top">
+              <tr>
+                <th>ID</th><th>Name</th><th>Role</th><th>Department</th><th>Previous Hospital</th>
+                <th>Experience</th><th>Joining Date</th><th>Notice Period</th><th>Salary</th><th>Status</th>
+               {% if is_admin %}
+                                <th>Actions</th>
+                                {% endif %}
+              </tr>
+            </thead>
+            <tbody id="employeesTable">
+              <tr><td colspan="{{ 11 if is_admin else 10 }}" class="text-center">Loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+<!-- Manage Users Modal -->
+    <div class="modal fade" id="manageUsersModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Manage Users</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#employeeUsers">Employees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#patientUsers">Patients</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div id="employeeUsers" class="tab-pane fade show active">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Username</th>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="employeeUsersTable">
+                                        <tr><td colspan="4" class="text-center">Loading...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="patientUsers" class="tab-pane fade">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Username</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="patientUsersTable">
+                                        <tr><td colspan="4" class="text-center">Loading...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div class="modal fade" id="addEmployeeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Employee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addEmployeeForm">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="empName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Role</label>
+                            <select class="form-select" id="empRole" required>
+                                <option value="">Select Role</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Nurse">Nurse</option>
+                                <option value="Pharmacist">Pharmacist</option>
+                                <option value="Lab Technician">Lab Technician</option>
+                                <option value="Receptionist">Receptionist</option>
+                                <option value="Administrator">Administrator</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Department</label>
+                            <select class="form-select" id="empDepartment" required>
+                                <option value="">Select Department</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Emergency">Emergency</option>
+                                <option value="Surgery">Surgery</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="empEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="empPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="empPassword" required>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger d-none" id="addEmployeeError"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="addEmployee()">Add Employee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Employee Modal -->
+    <div class="modal fade" id="editEmployeeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Employee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editEmployeeForm">
+                        <input type="hidden" id="editEmpId">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editEmpName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Role</label>
+                            <select class="form-select" id="editEmpRole" required>
+                                <option value="">Select Role</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Nurse">Nurse</option>
+                                <option value="Pharmacist">Pharmacist</option>
+                                <option value="Lab Technician">Lab Technician</option>
+                                <option value="Receptionist">Receptionist</option>
+                                <option value="Administrator">Administrator</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Department</label>
+                            <select class="form-select" id="editEmpDepartment" required>
+                                <option value="">Select Department</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Emergency">Emergency</option>
+                                <option value="Surgery">Surgery</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editEmpEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="editEmpPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select" id="editEmpStatus" required>
+                                <option value="Active">Active</option>
+                                <option value="On Leave">On Leave</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger d-none" id="editEmployeeError"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveEmployeeChanges()">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Employee Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changePasswordForm">
+                        <input type="hidden" id="changePassEmpId">
+                        <div class="mb-3">
+                            <label class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="newPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger d-none" id="changePasswordError"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="changeEmployeePassword()">Change Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audit Log Modal -->
+    <div class="modal fade" id="auditLogModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Audit Logs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>Action</th>
+                                    <th>Actor</th>
+                                    <th>Resource</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody id="auditLogsTable">
+                                <tr><td colspan="5" class="text-center">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Patients Tab -->
+      <div id="patients" class="tab-pane fade">
+        <div class="d-flex justify-content-between mb-3">
+          <input type="text" class="form-control w-25" id="searchPatients" placeholder="Search patients...">
+          <div>
+            <button class="btn btn-success me-2" onclick="exportData('patients','excel')"><i class="bi bi-file-excel"></i> Export Excel</button>
+            <button class="btn btn-info" onclick="exportData('patients','csv')"><i class="bi bi-filetype-csv"></i> Export CSV</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="table table-hover table-sm">
+            <thead class="table-light sticky-top">
+              <tr>
+                <th>ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Consulting Doctor</th>
+                <th>Department</th><th>Condition</th><th>Admission Date</th><th>Last Visit</th>
+                <th>Next Appointment</th><th>Status</th><th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="patientsTable">
+              <tr><td colspan="12" class="text-center">Loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal and scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+// Column counts (used for dynamic colspan in placeholders)
+const EMP_COLS = {{ 11 if is_admin else 10 }};
+const PAT_COLS = 12; // patients table includes an action/verify column
+const IS_ADMIN = {{ 'true' if is_admin else 'false' }};
+
+/* Employee page script - restored columns, admin controls + OTP modal hookup (must match backend) */
+
+// Element refs for modals/forms (make available to older inline code)
+const addEmployeeModal = document.getElementById('addEmployeeModal');
+const addEmployeeForm = document.getElementById('addEmployeeForm');
+const empName = document.getElementById('empName');
+const empRole = document.getElementById('empRole');
+const empDepartment = document.getElementById('empDepartment');
+const empEmail = document.getElementById('empEmail');
+const empPhone = document.getElementById('empPhone');
+const empPassword = document.getElementById('empPassword');
+const addEmployeeError = document.getElementById('addEmployeeError');
+
+const editEmployeeModal = document.getElementById('editEmployeeModal');
+const editEmpId = document.getElementById('editEmpId');
+const editEmpName = document.getElementById('editEmpName');
+const editEmpRole = document.getElementById('editEmpRole');
+const editEmpDepartment = document.getElementById('editEmpDepartment');
+const editEmpEmail = document.getElementById('editEmpEmail');
+const editEmpPhone = document.getElementById('editEmpPhone');
+const editEmpStatus = document.getElementById('editEmpStatus');
+const editEmployeeError = document.getElementById('editEmployeeError');
+
+const changePasswordModal = document.getElementById('changePasswordModal');
+const changePassEmpId = document.getElementById('changePassEmpId');
+const changePasswordForm = document.getElementById('changePasswordForm');
+const newPassword = document.getElementById('newPassword');
+const confirmPassword = document.getElementById('confirmPassword');
+const changePasswordError = document.getElementById('changePasswordError');
+
+function hideModalSafe(el){ try{ const m = bootstrap.Modal.getInstance(el); if(m) m.hide(); }catch(e){}
+}
+
+function showModalSafe(el){ try{ const m = bootstrap.Modal.getOrCreateInstance(el); if(m) m.show(); }catch(e){}
+}
+
+let allEmployees = [];
+let allPatients = [];
+const AUTO_REFRESH_MS = 20000;
+
+async function safeFetch(url, opts) {
+  const r = await fetch(url, opts);
+  if (r.status === 401 || r.status === 403) { window.location.href = '/'; throw new Error('Unauthorized'); }
+  return r;
+}
+
+async function loadData() {
+  try {
+    const statsR = await safeFetch('/api/stats');
+    const stats = await statsR.json();
+    updateStats(stats);
+
+    const empR = await safeFetch('/api/employees');
+    const empJ = await empR.json();
+    allEmployees = Array.isArray(empJ.employees) ? empJ.employees : [];
+    renderEmployees(allEmployees);
+
+    const patR = await safeFetch('/api/patients');
+    const patJ = await patR.json();
+    // backend returns minimal patient objects for employees (id, patient_id, name, phone, department, consulting_doctor...)
+    allPatients = Array.isArray(patJ.patients) ? patJ.patients : [];
+    renderPatients(allPatients);
+
+    const lastUpdated = stats.last_updated || new Date().toISOString();
+    document.getElementById('lastUpdated').textContent = 'Updated: ' + new Date(lastUpdated).toLocaleTimeString();
+
+    updateTabLabels(allEmployees.length, allPatients.length);
+  } catch (err) {
+    console.error('loadData error', err);
+  }
+}
+
+function updateStats(s) {
+  document.getElementById('totalEmployees').textContent = s.total_employees ?? '-';
+  document.getElementById('activeEmployees').textContent = s.active_employees ?? '-';
+  document.getElementById('totalPatients').textContent = s.total_patients ?? '-';
+  document.getElementById('activePatients').textContent = s.active_patients ?? '-';
+}
+
+function escapeHtml(s){ if(s===undefined || s===null) return ''; return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;'); }
+
+function renderEmployees(list) {
+  const tbody = document.getElementById('employeesTable');
+  if (!list || !list.length) {
+    tbody.innerHTML = ` <tr><td colspan="${EMP_COLS}" class="text-center">No employees found.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = list.map(e => `
+    <tr>
+      <td>${escapeHtml(e.employee_id)}</td>
+      <td><strong>${escapeHtml(e.name)}</strong></td>
+      <td>${escapeHtml(e.role)}</td>
+      <td>${escapeHtml(e.department)}</td>
+      <td>${escapeHtml(e.previous_hospital)}</td>
+      <td>${e.previous_experience_years ?? ''} yrs</td>
+      <td>${e.joining_date ?? ''}</td>
+      <td>${e.notice_period_days ?? ''} days</td>
+      <td>$${Number(e.current_salary || 0).toLocaleString()}</td>
+      <td><span class="badge bg-${(e.status === 'Active') ? 'success' : 'warning'}">${escapeHtml(e.status)}</span></td>
+     {% if is_admin %}
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary me-1" onclick="editEmployee(${e.id})" title="Edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-warning me-1" onclick="openChangePasswordModal(${e.id})" title="Change Password">
+                            <i class="bi bi-key"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger" onclick="deleteEmployee(${e.id})" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+            {% endif %}
+    </tr>
+  `).join('');
+}
+
+function renderPatients(list) {
+  const tbody = document.getElementById('patientsTable');
+  if (!list || !list.length) {
+    tbody.innerHTML = ` <tr><td colspan="${PAT_COLS}" class="text-center">No patients found.</td></tr>`;
+    return;
+  }
+
+  // The data from backend for employees is minimal; we show fields if present
+  tbody.innerHTML = list.map(p => `
+    <tr>
+      <td>${escapeHtml(p.patient_id ?? p.id ?? '')}</td>
+      <td><strong>${escapeHtml(p.name ?? '')}</strong></td>
+      <td>${p.age ?? (p._age ?? '-')}</td>
+      <td>${escapeHtml(p.gender ?? '-')}</td>
+      <td>${escapeHtml(p.consulting_doctor ?? '-')}</td>
+      <td>${escapeHtml(p.department ?? '-')}</td>
+      <td>${escapeHtml(p.condition ?? '-')}</td>
+      <td>${p.admission_date ?? '-'}</td>
+      <td>${p.last_visit_date ?? '-'}</td>
+      <td>${p.next_appointment ?? '-'}</td>
+      <td><span class="badge bg-info">${escapeHtml(p.status ?? '-')}</span></td>
+      <td>
+        <button class="btn btn-sm btn-outline-primary verify-view-btn me-1"
+                data-patient-id="${escapeHtml(p.patient_id ?? p.id ?? '')}"
+                data-phone="${escapeHtml(p.phone ?? '')}">
+          <i class="bi bi-check2-square"></i> Verify & View
+        </button>
+        ${IS_ADMIN ? `
+        <button class="btn btn-sm btn-outline-danger" onclick="deletePatient(${p.id})" title="Delete">
+          <i class="bi bi-trash"></i>
+        </button>
+        ` : `
+        <button class="btn btn-sm btn-outline-warning" onclick="dischargePatient(${p.id})" title="Discharge">
+          <i class="bi bi-hospital"></i>
+        </button>
+        `}
+      </td>
+    </tr>
+  `).join('');
+}
+
+function exportData(type, fmt) {
+  if (!['employees','patients'].includes(type)) return;
+  window.location.href = `/api/export/${type}/${fmt}`;
+}
+
+function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; }
+
+document.getElementById('searchEmployees').addEventListener('input', debounce(e => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) return renderEmployees(allEmployees);
+  renderEmployees(allEmployees.filter(x =>
+    (x.name && x.name.toLowerCase().includes(q)) ||
+    (x.employee_id && x.employee_id.toLowerCase().includes(q)) ||
+    (x.role && x.role.toLowerCase().includes(q))
+  ));
+}, 200));
+
+document.getElementById('searchPatients').addEventListener('input', debounce(e => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) return renderPatients(allPatients);
+  renderPatients(allPatients.filter(x =>
+    (x.name && x.name.toLowerCase().includes(q)) ||
+    (x.patient_id && x.patient_id.toLowerCase().includes(q)) ||
+    (x.consulting_doctor && x.consulting_doctor.toLowerCase().includes(q))
+  ));
+}, 200));
+
+function updateTabLabels(empCount, patCount) {
+  const empTab = document.querySelector('a[href="#employees"]');
+  const patTab = document.querySelector('a[href="#patients"]');
+  if (empTab) empTab.innerHTML = `<i class="bi bi-people"></i> Employees (${empCount})`;
+  if (patTab) patTab.innerHTML = `<i class="bi bi-heart-pulse"></i> Patients (${patCount})`;
+}
+
+/* Placeholder admin functions (implement server routes if desired) */
+function onEditEmployee(btn){
+  const id = btn.getAttribute('data-emp-id');
+  alert('Edit employee: ' + id + ' (implement edit route on server)');
+}
+function onDeleteEmployee(btn){
+  const id = btn.getAttribute('data-emp-id');
+  if (!confirm('Delete employee ' + id + '?')) return;
+  // Example delete call - backend route not implemented by default
+  fetch(`/api/employee/delete/${encodeURIComponent(id)}`, { method: 'DELETE' })
+    .then(r => r.json()).then(j => {
+      if (j && j.ok) { alert('Deleted'); loadData(); }
+      else alert('Delete failed: ' + (j.error || JSON.stringify(j)));
+    }).catch(err => alert('Network error'));
+}
+
+/* OTP modal flow: use event delegation to handle verify-view button clicks */
+let accessTimerHandle = null;
+
+document.addEventListener('click', function(e){
+  const v = e.target.closest && e.target.closest('.verify-view-btn');
+  if (v) {
+    const pid = v.getAttribute('data-patient-id') || '';
+    const phone = v.getAttribute('data-phone') || '';
+    openPatientOtpModal(pid, phone);
+  }
+});
+
+/* --- Modal UI helpers --- */
+function hideModalAlert(){ const el = document.getElementById('otpModalAlert'); if(!el) return; el.className='alert d-none'; el.textContent=''; }
+function showModalAlert(msg, type='info'){ const el = document.getElementById('otpModalAlert'); if(!el) return; el.className = 'alert alert-' + type; el.textContent = msg; el.classList.remove('d-none'); }
+
+function openPatientOtpModal(patientId, phone){
+  hideModalAlert();
+  const pid = document.getElementById('modalPatientId');
+  const ph = document.getElementById('modalPatientPhone');
+  const otp = document.getElementById('modalOtpInput');
+  const details = document.getElementById('modalPatientDetails');
+  const countdown = document.getElementById('modalCountdown');
+  if (pid) pid.value = patientId || '';
+  if (ph) ph.value = phone || '';
+  if (otp) otp.value = '';
+  if (details) details.classList.add('d-none');
+  if (countdown) countdown.classList.add('d-none');
+  const modal = new bootstrap.Modal(document.getElementById('patientOtpModal'));
+  modal.show();
+}
+
+/* Request OTP button */
+document.addEventListener('click', async function(e){
+  if (!e.target || e.target.id !== 'modalRequestOtpBtn') return;
+  hideModalAlert();
+  const phone = (document.getElementById('modalPatientPhone')||{}).value || '';
+  const patientId = (document.getElementById('modalPatientId')||{}).value || '';
+  if (!phone) { showModalAlert('Enter patient phone number.', 'warning'); return; }
+  try {
+    const r = await fetch('/api/request-patient-otp', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ phone, patient_id: patientId })
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      showModalAlert('OTP requested — patient will receive it (dev: check server console).', 'success');
+      document.getElementById('modalOtpInput').focus();
+    } else {
+      showModalAlert('Error requesting OTP: ' + (j.error || j.message || r.statusText), 'danger');
+    }
+  } catch (err) {
+    showModalAlert('Network error when requesting OTP.', 'danger');
+  }
+});
+
+/* Verify OTP button */
+document.addEventListener('click', async function(e){
+  if (!e.target || e.target.id !== 'modalVerifyOtpBtn') return;
+  hideModalAlert();
+  const phone = (document.getElementById('modalPatientPhone')||{}).value || '';
+  const otp = (document.getElementById('modalOtpInput')||{}).value || '';
+  const patientId = (document.getElementById('modalPatientId')||{}).value || '';
+  if (!phone) { showModalAlert('Enter patient phone number.', 'warning'); return; }
+  if (!otp || otp.length < 4) { showModalAlert('Enter the OTP (6 digits).', 'warning'); return; }
+
+  try {
+    const r = await fetch('/api/verify-patient-otp', {
+      method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ phone, otp })
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      showModalAlert('OTP verified — temporary access granted.', 'success');
+      startAccessCountdown(j.access_expires_in || 120);
+      // fetch patient details
+      const pr = await fetch(`/api/get-patient/${encodeURIComponent(patientId)}`);
+      const pj = await pr.json();
+      if (pr.ok && pj.patient) {
+        renderPatientDetailsInModal(pj.patient, pj.access_expires_at);
+      } else {
+        showModalAlert('Failed to load patient details: ' + (pj.error || pj.message || ''), 'danger');
+      }
+    } else {
+      showModalAlert('OTP verify failed: ' + (j.error || j.message || r.statusText), 'danger');
+    }
+  } catch (err) {
+    showModalAlert('Network error while verifying OTP.', 'danger');
+  }
+});
+
+function renderPatientDetailsInModal(patient, access_expires_at) {
+  const div = document.getElementById('modalPatientDetails');
+  if (!div) return;
+  div.innerHTML = `
+    <h5 class="mb-2">Patient Details</h5>
+    <div class="row gx-3 gy-2">
+      <div class="col-md-6"><strong>Patient ID</strong><div>${escapeHtml(patient.patient_id || patient.id || '')}</div></div>
+      <div class="col-md-6"><strong>Name</strong><div>${escapeHtml(patient.name || '-')}</div></div>
+      <div class="col-md-3"><strong>Age</strong><div>${patient.age ?? '-'}</div></div>
+      <div class="col-md-3"><strong>Gender</strong><div>${escapeHtml(patient.gender || '-')}</div></div>
+      <div class="col-md-3"><strong>Blood</strong><div>${escapeHtml(patient.blood_group || '-')}</div></div>
+      <div class="col-12"><strong>Phone</strong><div>${escapeHtml(patient.phone || '-')}</div></div>
+      <div class="col-12"><strong>Email</strong><div>${escapeHtml(patient.email || '-')}</div></div>
+      <div class="col-12"><strong>Address</strong><div>${escapeHtml(patient.address || '-')}</div></div>
+      <div class="col-12"><strong>Doctor</strong><div>${escapeHtml(patient.consulting_doctor || '-')}</div></div>
+      <div class="col-12"><strong>Condition</strong><div>${escapeHtml(patient.condition || '-')}</div></div>
+      <div class="col-12"><strong>Medication</strong><div>${escapeHtml(patient.medication || '-')}</div></div>
+      <div class="col-md-4"><strong>Admission</strong><div>${patient.admission_date || '-'}</div></div>
+      <div class="col-md-4"><strong>Last Visit</strong><div>${patient.last_visit_date || '-'}</div></div>
+      <div class="col-md-4"><strong>Next Appointment</strong><div>${patient.next_appointment || '-'}</div></div>
+      <div class="col-12 mt-2"><small class="text-muted">Access expires at: ${escapeHtml(access_expires_at || '-')}</small></div>
+    </div>
+  `;
+  div.classList.remove('d-none');
+}
+
+function startAccessCountdown(seconds) {
+  const wrap = document.getElementById('modalCountdown');
+  const timer = document.getElementById('accessTimer');
+  if (!wrap || !timer) return;
+  let remain = Number(seconds) || 0;
+  if (accessTimerHandle) clearInterval(accessTimerHandle);
+  wrap.classList.remove('d-none');
+  timer.textContent = formatTime(remain);
+  accessTimerHandle = setInterval(async () => {
+    remain -= 1;
+    if (remain <= 0) {
+      clearInterval(accessTimerHandle);
+      timer.textContent = '00:00';
+      try { await fetch('/api/revoke-patient-access', { method: 'POST' }); } catch(_) {}
+      const m = bootstrap.Modal.getInstance(document.getElementById('patientOtpModal'));
+      if (m) m.hide();
+      loadData().catch(()=>{});
+      return;
+    }
+    timer.textContent = formatTime(remain);
+  }, 1000);
+}
+
+function formatTime(s) { const m=Math.floor(s/60), sec=s%60; return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`; }
+
+/* initial load */
+setInterval(loadData, AUTO_REFRESH_MS);
+loadData();
+/* ===================== ADMIN LOGIC (ADDED SAFELY) ===================== */
+
+/* Manual data update */
+async function manualUpdate() {
+  try {
+    const response = await safeFetch('/api/manual_update');
+    const result = await response.json();
+
+    if (result.success) {
+      alert('Data updated successfully!');
+      loadData();
+    } else {
+      alert('Error: ' + (result.error || 'Update failed'));
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Failed to update data');
+  }
+}
+
+/* Add employee */
+async function addEmployee() {
+  const name = empName.value;
+  const role = empRole.value;
+  const department = empDepartment.value;
+  const email = empEmail.value;
+  const phone = empPhone.value;
+  const password = empPassword.value;
+
+  addEmployeeError.classList.add('d-none');
+
+  if (!name || !role || !department || !email || !phone || !password) {
+    addEmployeeError.textContent = 'All fields are required';
+    addEmployeeError.classList.remove('d-none');
+    return;
+  }
+
+  try {
+    const res = await safeFetch('/api/employees', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name, role, department, email, phone, password })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      addEmployeeForm.reset();
+      bootstrap.Modal.getInstance(addEmployeeModal).hide();
+      alert('Employee added successfully');
+      loadData();
+    } else {
+      addEmployeeError.textContent = data.error || 'Failed to add employee';
+      addEmployeeError.classList.remove('d-none');
+    }
+  } catch (err) {
+    console.error(err);
+    addEmployeeError.textContent = 'Server error';
+    addEmployeeError.classList.remove('d-none');
+  }
+}
+
+/* Edit employee */
+function editEmployee(id) {
+  const emp = allEmployees.find(e => e.id === id);
+  if (!emp) return alert('Employee not found');
+
+  editEmpId.value = emp.id;
+  editEmpName.value = emp.name;
+  editEmpRole.value = emp.role;
+  editEmpDepartment.value = emp.department;
+  editEmpEmail.value = emp.email;
+  editEmpPhone.value = emp.phone;
+  editEmpStatus.value = emp.status;
+
+  editEmployeeError.classList.add('d-none');
+  new bootstrap.Modal(editEmployeeModal).show();
+}
+
+/* Save edited employee */
+async function saveEmployeeChanges() {
+  const id = editEmpId.value;
+
+  const payload = {
+    name: editEmpName.value,
+    role: editEmpRole.value,
+    department: editEmpDepartment.value,
+    email: editEmpEmail.value,
+    phone: editEmpPhone.value,
+    status: editEmpStatus.value
+  };
+
+  editEmployeeError.classList.add('d-none');
+
+  try {
+    const res = await safeFetch(`/api/employees/${id}`, {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      bootstrap.Modal.getInstance(editEmployeeModal).hide();
+      alert('Employee updated');
+      loadData();
+    } else {
+      editEmployeeError.textContent = data.error || 'Update failed';
+      editEmployeeError.classList.remove('d-none');
+    }
+  } catch (err) {
+    console.error(err);
+    editEmployeeError.textContent = 'Server error';
+    editEmployeeError.classList.remove('d-none');
+  }
+}
+
+/* Open change password modal */
+function openChangePasswordModal(id) {
+  changePassEmpId.value = id;
+  changePasswordForm.reset();
+  changePasswordError.classList.add('d-none');
+  new bootstrap.Modal(changePasswordModal).show();
+}
+
+/* Change password */
+async function changeEmployeePassword() {
+  const id = changePassEmpId.value;
+  const p1 = newPassword.value;
+  const p2 = confirmPassword.value;
+
+  changePasswordError.classList.add('d-none');
+
+  if (!p1 || !p2) {
+    changePasswordError.textContent = 'All fields required';
+    changePasswordError.classList.remove('d-none');
+    return;
+  }
+
+  if (p1 !== p2) {
+    changePasswordError.textContent = 'Passwords do not match';
+    changePasswordError.classList.remove('d-none');
+    return;
+  }
+
+  try {
+    const res = await safeFetch(`/api/employees/${id}/password`, {
+      method: 'PATCH',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ password: p1 })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      bootstrap.Modal.getInstance(changePasswordModal).hide();
+      alert('Password updated');
+    } else {
+      changePasswordError.textContent = data.error || 'Update failed';
+      changePasswordError.classList.remove('d-none');
+    }
+  } catch (err) {
+    console.error(err);
+    changePasswordError.textContent = 'Server error';
+    changePasswordError.classList.remove('d-none');
+  }
+}
+
+/* Delete employee */
+async function deleteEmployee(id) {
+  if (!confirm('Delete this employee?')) return;
+
+  try {
+    const res = await safeFetch(`/api/employees/${id}`, { method: 'DELETE' });
+    const data = await res.json();
+
+    if (data.success) {
+      alert('Employee deleted');
+      loadData();
+    } else {
+      alert(data.error || 'Delete failed');
+    }
+  } catch (err) {
+    console.error(err);
+    alert('Server error');
+  }
+}
+
+/* Discharge patient */
+async function dischargePatient(id) {
+  if (!confirm('Discharge this patient?')) return;
+
+  try {
+    const res = await safeFetch(`/api/patients/${id}`, {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'discharge' })
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      alert('Patient discharged');
+      loadData();
+    } else {
+      alert(data.error || 'Discharge failed');
+    }
+  } catch (err) {
+    console.error(err);
+    alert('Server error');
+  }
+}
+
+/* Delete patient */
+async function deletePatient(id) {
+  if (!confirm('Delete this patient? This action cannot be undone.')) return;
+
+  try {
+    const res = await safeFetch(`/api/patients/${id}`, { method: 'DELETE' });
+    const data = await res.json();
+
+    if (data.success) {
+      alert('Patient deleted');
+      loadData();
+    } else {
+      alert(data.error || 'Delete failed');
+    }
+  } catch (err) {
+    console.error(err);
+    alert('Server error');
+  }
+}
+
+/* Load audit logs */
+async function loadAuditLogs() {
+  try {
+    const res = await safeFetch('/api/audit/logs');
+    const data = await res.json();
+
+    auditLogsTable.innerHTML = (data.logs || []).map(l => `
+      <tr>
+        <td>${new Date(l.timestamp).toLocaleString()}</td>
+        <td>${l.action}</td>
+        <td>${l.actor_id}</td>
+        <td>${l.resource || '-'}</td>
+        <td>${l.before ? 'Before: ' + JSON.stringify(l.before).slice(0,50) : ''}
+            ${l.after ? '<br>After: ' + JSON.stringify(l.after).slice(0,50) : ''}</td>
+      </tr>
+    `).join('') || '<tr><td colspan="5">No logs</td></tr>';
+  } catch (err) {
+    console.error(err);
+    auditLogsTable.innerHTML =
+      '<tr><td colspan="5" class="text-center">Failed to load logs</td></tr>';
+  }
+}
+
+document
+  .getElementById('auditLogModal')
+  .addEventListener('show.bs.modal', loadAuditLogs);
+
+/* =================== END ADMIN LOGIC =================== */
+
+
+  </script>
+
+  <!-- Patient OTP / View Modal (same as before) -->
+  <div class="modal fade" id="patientOtpModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Patient Consent — Verify Phone</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="otpModalAlert" class="alert d-none"></div>
+
+          <div class="row g-2 mb-2">
+            <div class="col-md-6">
+              <label class="form-label">Patient ID</label>
+              <input id="modalPatientId" class="form-control" readonly>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Patient Phone</label>
+              <input id="modalPatientPhone" class="form-control" placeholder="+1-xxx-xxx-xxxx">
+            </div>
+          </div>
+
+          <div class="row g-2 mb-3 align-items-center">
+            <div class="col-md-6">
+              <label class="form-label">OTP</label>
+              <input id="modalOtpInput" class="form-control" placeholder="Enter 6-digit OTP" maxlength="6" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <div class="col-md-6 d-flex gap-2">
+              <button id="modalRequestOtpBtn" class="btn btn-outline-primary mt-4">Request OTP</button>
+              <button id="modalVerifyOtpBtn" class="btn btn-outline-success mt-4">Verify OTP</button>
+              <button class="btn btn-secondary mt-4" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+          <div id="modalCountdown" class="mb-3 text-muted small d-none">
+            Access time remaining: <strong id="accessTimer">--:--</strong>
+          </div>
+
+          <hr>
+
+          <div id="modalPatientDetails" class="d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

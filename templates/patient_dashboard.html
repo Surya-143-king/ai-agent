@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - Healthcare Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .info-card h5 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .auto-update-badge { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <i class="bi bi-heart-pulse me-2"></i>
+                Healthcare Management - Patient Portal
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="text-white me-3">Welcome, {{ user.name }}</span>
+                <span class="badge bg-success auto-update-badge me-3">
+                    <i class="bi bi-arrow-repeat"></i> Auto-update: 20s
+                </span>
+                <span class="text-white me-3" id="lastUpdated">Loading...</span>
+                <a href="/logout" class="btn btn-light btn-sm">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <strong>Your Medical Information</strong> - This data is private and only visible to you and your healthcare providers.
+                </div>
+
+                <div id="patientData">
+                    <div class="text-center py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-3">Loading your medical information...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        async function loadPatientData() {
+            try {
+                const response = await fetch('/api/patient/me', {
+                  credentials: 'same-origin'
+                 });
+
+                const data = await response.json();
+                
+                if (data.patients && data.patients.length > 0) {
+                    displayPatientInfo(data.patients[0]);
+                    document.getElementById('lastUpdated').textContent = 
+                        'Updated: ' + new Date(data.last_updated).toLocaleTimeString();
+                } else {
+                    document.getElementById('patientData').innerHTML = `
+                        <div class="alert alert-warning">
+                            No patient data found for your account.
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('patientData').innerHTML = `
+                    <div class="alert alert-danger">
+                        Error loading your medical information. Please try again later.
+                    </div>
+                `;
+            }
+        }
+
+        function displayPatientInfo(patient) {
+            const html = `
+                <div class="info-card">
+                    <h5><i class="bi bi-person-circle me-2"></i>Personal Information</h5>
+                    <div class="info-row">
+                        <strong>Patient ID:</strong>
+                        <span>${patient.patient_id}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Name:</strong>
+                        <span>${patient.name}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Age:</strong>
+                        <span>${patient.age} years</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Gender:</strong>
+                        <span>${patient.gender}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Blood Group:</strong>
+                        <span class="badge bg-danger">${patient.blood_group}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Phone:</strong>
+                        <span>${patient.phone}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Email:</strong>
+                        <span>${patient.email}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Address:</strong>
+                        <span>${patient.address}</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h5><i class="bi bi-hospital me-2"></i>Medical Information</h5>
+                    <div class="info-row">
+                        <strong>Consulting Doctor:</strong>
+                        <span class="badge bg-primary">${patient.consulting_doctor}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Department:</strong>
+                        <span>${patient.department}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Condition:</strong>
+                        <span>${patient.condition}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Current Medication:</strong>
+                        <span>${patient.medication}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Status:</strong>
+                        <span class="badge bg-success">${patient.status}</span>
+                    </div>
+                    
+                </div>
+
+                <div class="info-card">
+                    <h5><i class="bi bi-calendar-check me-2"></i>Appointment Schedule</h5>
+                    <div class="info-row">
+                        <strong>Admission Date:</strong>
+                        <span>${patient.admission_date}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Last Visit:</strong>
+                        <span>${patient.last_visit_date}</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Next Appointment:</strong>
+                        <span class="badge bg-warning text-dark">${patient.next_appointment}</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h5><i class="bi bi-calendar-plus me-2"></i>Register for Appointment</h5>
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Time</label>
+                            <select class="form-control" id="appointmentTime" required>
+                                <option value="">Select Time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Reason for Visit</label>
+                            <textarea class="form-control" id="appointmentReason" rows="3" placeholder="Describe your symptoms or reason for visit"></textarea>
+                        </div>
+                        <div class="alert alert-success d-none" id="appointmentSuccess"></div>
+                        <div class="alert alert-danger d-none" id="appointmentError"></div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-calendar-check me-2"></i>
+                            Register Appointment
+                        </button>
+                    </form>
+                </div>
+            `;
+            
+            document.getElementById('patientData').innerHTML = html;
+        }
+
+        // Auto-refresh every 20 seconds
+        setInterval(loadPatientData, 20000);
+
+        // Initial load
+        loadPatientData();
+        
+        // Appointment registration
+        document.getElementById('appointmentForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const successMsg = document.getElementById('appointmentSuccess');
+            const errorMsg = document.getElementById('appointmentError');
+            successMsg.classList.add('d-none');
+            errorMsg.classList.add('d-none');
+            
+            const data = {
+                date: document.getElementById('appointmentDate').value,
+                time: document.getElementById('appointmentTime').value,
+                reason: document.getElementById('appointmentReason').value
+            };
+            
+            try {
+                const response = await fetch('/api/register-appointment', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data),
+                    credentials: 'same-origin'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    successMsg.textContent = 'Appointment registered successfully! You will be notified of confirmation.';
+                    successMsg.classList.remove('d-none');
+                    document.getElementById('appointmentForm').reset();
+                    // Reload data to update appointment info
+                    loadPatientData();
+                } else {
+                    errorMsg.textContent = result.message;
+                    errorMsg.classList.remove('d-none');
+                }
+            } catch (error) {
+                errorMsg.textContent = 'Failed to register appointment. Please try again.';
+                errorMsg.classList.remove('d-none');
+            }
+        });
+        
+    </script>
+</body>
+</html>

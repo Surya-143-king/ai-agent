@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Directory AI Agent - Live Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .stat-card { transition: transform 0.2s; cursor: pointer; }
+        .stat-card:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .processing-spinner { display: none; }
+        .processing-spinner.active { display: inline-block; }
+        #lastUpdated { font-size: 0.9rem; color: #6c757d; }
+        .provider-row:hover { background-color: #f1f3f5; cursor: pointer; }
+        .priority-high { color: #dc3545; font-weight: bold; }
+        .priority-medium { color: #ffc107; font-weight: bold; }
+        .priority-low { color: #28a745; }
+        .auto-refresh-badge { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="bi bi-hospital"></i>
+                Provider Directory AI Agent - Live Dashboard
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="badge bg-success auto-refresh-badge me-2">
+                    <i class="bi bi-arrow-repeat"></i> Auto-refresh: 15 min
+                </span>
+                <span id="lastUpdated" class="text-white me-3">Loading...</span>
+                <button class="btn btn-light btn-sm" onclick="manualRefresh()">
+                    <i class="bi bi-arrow-clockwise"></i> Refresh Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid py-4">
+        <!-- Stats Cards -->
+        <div class="row mb-4" id="statsCards">
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-primary">
+                    <div class="card-body">
+                        <h6 class="card-title">Total Providers</h6>
+                        <h2 class="mb-0" id="totalProviders">-</h2>
+                        <small>In system</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-success">
+                    <div class="card-body">
+                        <h6 class="card-title">Validated</h6>
+                        <h2 class="mb-0" id="validatedProviders">-</h2>
+                        <small id="validationRate">-% success rate</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-warning">
+                    <div class="card-body">
+                        <h6 class="card-title">Needs Review</h6>
+                        <h2 class="mb-0" id="needsReview">-</h2>
+                        <small id="reviewRate">-% requiring attention</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-info">
+                    <div class="card-body">
+                        <h6 class="card-title">Processing Status</h6>
+                        <h2 class="mb-0">
+                            <span id="processingStatus">Ready</span>
+                            <div class="spinner-border spinner-border-sm processing-spinner ms-2" role="status">
+                                <span class="visually-hidden">Processing...</span>
+                            </div>
+                        </h2>
+                        <small>System status</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <button class="btn btn-success me-2" onclick="exportExcel()">
+                    <i class="bi bi-file-excel"></i> Export to Excel
+                </button>
+                <button class="btn btn-info me-2" onclick="showReport()">
+                    <i class="bi bi-file-text"></i> View Full Report
+                </button>
+                <button class="btn btn-primary" onclick="filterHighPriority()">
+                    <i class="bi bi-filter"></i> High Priority Only
+                </button>
+            </div>
+        </div>
+
+        <!-- Providers Table -->
+        <div class="card">
+            <div class="card-header bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Provider Directory</h5>
+                    <input type="text" class="form-control w-25" id="searchBox" placeholder="Search providers..." onkeyup="searchProviders()">
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive" style="max-height: 600px; overflow-y: auto;">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light sticky-top">
+                            <tr>
+                                <th>NPI</th>
+                                <th>Name</th>
+                                <th>Specialty</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>City, State</th>
+                                <th>Status</th>
+                                <th>Confidence</th>
+                                <th>Priority</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="providersTable">
+                            <tr>
+                                <td colspan="10" class="text-center py-5">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <p class="mt-2">Loading providers...</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Provider Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Provider</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <input type="hidden" id="editId">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editName">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="editPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Specialty</label>
+                            <input type="text" class="form-control" id="editSpecialty">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveProvider()">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard - Healthcare Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .stat-card { transition: transform 0.2s; }
+        .stat-card:hover { transform: translateY(-5px); }
+        .auto-update-badge { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+        .table-container { max-height: 600px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <i class="bi bi-hospital me-2"></i>
+                Healthcare Management - Employee Portal
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="text-white me-3">Welcome, {{ user.name }}</span>
+                <span class="badge bg-success auto-update-badge me-3">
+                    <i class="bi bi-arrow-repeat"></i> Auto-update: 20s
+                </span>
+                <span class="text-white me-3" id="lastUpdated">Loading...</span>
+                <a href="/logout" class="btn btn-light btn-sm">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <!-- Stats Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-primary">
+                    <div class="card-body">
+                        <h6>Total Employees</h6>
+                        <h2 id="totalEmployees">-</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-success">
+                    <div class="card-body">
+                        <h6>Active Employees</h6>
+                        <h2 id="activeEmployees">-</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-info">
+                    <div class="card-body">
+                        <h6>Total Patients</h6>
+                        <h2 id="totalPatients">-</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stat-card text-white bg-warning">
+                    <div class="card-body">
+                        <h6>Active Patients</h6>
+                        <h2 id="activePatients">-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#employees">
+                    <i class="bi bi-people"></i> Employees (1000)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#patients">
+                    <i class="bi bi-heart-pulse"></i> Patients (1000)
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content bg-white p-3">
+            <!-- Employees Tab -->
+            <div id="employees" class="tab-pane fade show active">
+                <div class="d-flex justify-content-between mb-3">
+                    <input type="text" class="form-control w-25" id="searchEmployees" placeholder="Search employees...">
+                    <div>
+                        <button class="btn btn-success me-2" onclick="exportData('employees', 'excel')">
+                            <i class="bi bi-file-excel"></i> Export Excel
+                        </button>
+                        <button class="btn btn-info" onclick="exportData('employees', 'csv')">
+                            <i class="bi bi-filetype-csv"></i> Export CSV
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="table table-hover table-sm">
+                        <thead class="table-light sticky-top">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Department</th>
+                                <th>Previous Hospital</th>
+                                <th>Experience</th>
+                                <th>Joining Date</th>
+                                <th>Notice Period</th>
+                                <th>Salary</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeesTable">
+                            <tr><td colspan="10" class="text-center">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Patients Tab -->
+            <div id="patients" class="tab-pane fade">
+                <div class="d-flex justify-content-between mb-3">
+                    <input type="text" class="form-control w-25" id="searchPatients" placeholder="Search patients...">
+                    <div>
+                        <button class="btn btn-success me-2" onclick="exportData('patients', 'excel')">
+                            <i class="bi bi-file-excel"></i> Export Excel
+                        </button>
+                        <button class="btn btn-info" onclick="exportData('patients', 'csv')">
+                            <i class="bi bi-filetype-csv"></i> Export CSV
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="table table-hover table-sm">
+                        <thead class="table-light sticky-top">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Consulting Doctor</th>
+                                <th>Department</th>
+                                <th>Condition</th>
+                                <th>Admission Date</th>
+                                <th>Last Visit</th>
+                                <th>Next Appointment</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patientsTable">
+                            <tr><td colspan="11" class="text-center">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+/* Employee Dashboard - improved script
+   - Handles 401/403 -> redirect
+   - Debounces search inputs
+   - Dynamic tab labels (# employees / # patients)
+   - Defensive formatting for salary & last_updated
+*/
+
+let allEmployees = [];
+let allPatients = [];
+let statsCache = null;
+const AUTO_REFRESH_MS = 20000; // 20 seconds
+
+// Helper: safe fetch with auth check
+async function safeFetch(url, options) {
+  const resp = await fetch(url, options);
+  if (resp.status === 401 || resp.status === 403) {
+    // session expired / unauthorized -> send to login
+    window.location.href = '/';
+    throw new Error('Unauthorized');
+  }
+  return resp;
+}
+
+async function loadData() {
+  try {
+    // Load stats
+    const statsRes = await safeFetch('/api/stats');
+    const stats = await statsRes.json();
+    statsCache = stats;
+    updateStats(stats);
+
+    // Load employees
+    const empRes = await safeFetch('/api/employees');
+    const empData = await empRes.json();
+    allEmployees = Array.isArray(empData.employees) ? empData.employees : [];
+    displayEmployees(allEmployees);
+
+    // Load patients
+    const patRes = await safeFetch('/api/patients');
+    const patData = await patRes.json();
+    allPatients = Array.isArray(patData.patients) ? patData.patients : [];
+    displayPatients(allPatients);
+
+    // Update lastUpdated safely
+    const lastUpdated = stats.last_updated || empData.last_updated || patData.last_updated || new Date().toISOString();
+    try {
+      document.getElementById('lastUpdated').textContent = 'Updated: ' + new Date(lastUpdated).toLocaleTimeString();
+    } catch (e) {
+      document.getElementById('lastUpdated').textContent = 'Updated: —';
+    }
+
+    // Update tab labels with counts
+    updateTabLabels(allEmployees.length, allPatients.length);
+
+  } catch (error) {
+    console.error('Error loading data:', error);
+    // You may show a toast/alert here if you want
+  }
+}
+
+function updateStats(stats) {
+  document.getElementById('totalEmployees').textContent = stats.total_employees ?? '-';
+  document.getElementById('activeEmployees').textContent = stats.active_employees ?? '-';
+  document.getElementById('totalPatients').textContent = stats.total_patients ?? '-';
+  document.getElementById('activePatients').textContent = stats.active_patients ?? '-';
+}
+
+function safeFormatSalary(v) {
+  // v might be number or string — ensure a Number
+  const n = Number(v) || 0;
+  return n.toLocaleString();
+}
+
+function displayEmployees(employees) {
+  const tbody = document.getElementById('employeesTable');
+  if (!employees.length) {
+    tbody.innerHTML = '<tr><td colspan="10" class="text-center">No employees found.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = employees.map(e => `
+    <tr>
+      <td>${e.employee_id ?? ''}</td>
+      <td><strong>${escapeHtml(e.name ?? '')}</strong></td>
+      <td>${escapeHtml(e.role ?? '')}</td>
+      <td>${escapeHtml(e.department ?? '')}</td>
+      <td>${escapeHtml(e.previous_hospital ?? '')}</td>
+      <td>${e.previous_experience_years ?? ''} yrs</td>
+      <td>${e.joining_date ?? ''}</td>
+      <td>${e.notice_period_days ?? ''} days</td>
+      <td>$${safeFormatSalary(e.current_salary)}</td>
+      <td><span class="badge bg-${(e.status === 'Active') ? 'success' : 'warning'}">${escapeHtml(e.status ?? '')}</span></td>
+    </tr>
+  `).join('');
+}
+
+function displayPatients(patients) {
+  const tbody = document.getElementById('patientsTable');
+  if (!patients || !patients.length) {
+    tbody.innerHTML = '<tr><td colspan="12" class="text-center">No patients found.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = patients.map(p => `
+    <tr>
+      <td>${p.patient_id ?? ''}</td>
+      <td><strong>${escapeHtml(p.name ?? '')}</strong></td>
+      <td>${p.age ?? ''}</td>
+      <td>${escapeHtml(p.gender ?? '')}</td>
+      <td>${escapeHtml(p.consulting_doctor ?? '')}</td>
+      <td>${escapeHtml(p.department ?? '')}</td>
+      <td>${escapeHtml(p.condition ?? '')}</td>
+      <td>${p.admission_date ?? ''}</td>
+      <td>${p.last_visit_date ?? ''}</td>
+      <td>${p.next_appointment ?? ''}</td>
+      <td><span class="badge bg-info">${escapeHtml(p.status ?? '')}</span></td>
+      <td>
+        <button class="btn btn-sm btn-outline-primary"
+                onclick="openPatientOtpModal('${p.patient_id}', '${p.phone}')">
+          Verify & View
+        </button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+
+function exportData(type, format) {
+  // Sanity check
+  if (!['employees','patients'].includes(type)) return;
+  if (!['csv','excel','xlsx'].includes(format)) return;
+  window.location.href = `/api/export/${type}/${format}`;
+}
+
+// Debounce utility
+function debounce(fn, wait) {
+  let t;
+  return function (...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), wait);
+  };
+}
+
+// Search handlers
+function applyEmployeeSearch(term) {
+  const s = term.trim().toLowerCase();
+  if (!s) return displayEmployees(allEmployees);
+  const filtered = allEmployees.filter(emp =>
+    (emp.name && emp.name.toLowerCase().includes(s)) ||
+    (emp.employee_id && emp.employee_id.toLowerCase().includes(s)) ||
+    (emp.role && emp.role.toLowerCase().includes(s)) ||
+    (emp.department && emp.department.toLowerCase().includes(s))
+  );
+  displayEmployees(filtered);
+}
+
+function applyPatientSearch(term) {
+  const s = term.trim().toLowerCase();
+  if (!s) return displayPatients(allPatients);
+  const filtered = allPatients.filter(pat =>
+    (pat.name && pat.name.toLowerCase().includes(s)) ||
+    (pat.patient_id && pat.patient_id.toLowerCase().includes(s)) ||
+    (pat.consulting_doctor && pat.consulting_doctor.toLowerCase().includes(s))
+  );
+  displayPatients(filtered);
+}
+
+// Attach debounce listeners
+document.getElementById('searchEmployees').addEventListener('input', debounce((e) => {
+  applyEmployeeSearch(e.target.value);
+}, 250));
+
+document.getElementById('searchPatients').addEventListener('input', debounce((e) => {
+  applyPatientSearch(e.target.value);
+}, 250));
+
+// Tab label updater
+function updateTabLabels(empCount, patCount) {
+  const empTab = document.querySelector('a[href="#employees"]');
+  const patTab = document.querySelector('a[href="#patients"]');
+  if (empTab) empTab.innerHTML = `<i class="bi bi-people"></i> Employees (${empCount})`;
+  if (patTab) patTab.innerHTML = `<i class="bi bi-heart-pulse"></i> Patients (${patCount})`;
+}
+
+// Escape HTML to avoid XSS (defensive)
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+// Auto-refresh
+let autoRefreshHandle = setInterval(loadData, AUTO_REFRESH_MS);
+
+// Initial load
+loadData();
+
+// Optional: provide manual stop/start for auto-refresh (not shown in UI), example:
+// clearInterval(autoRefreshHandle);
+
+</script>
+<!-- Patient OTP / View Modal -->
+<div class="modal fade" id="patientOtpModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Patient Consent — Verify Phone</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="modalCloseX"></button>
+      </div>
+      <div class="modal-body">
+        <div id="otpModalAlert" class="alert d-none"></div>
+
+        <div class="row g-2 mb-2">
+          <div class="col-md-6">
+            <label class="form-label">Patient ID</label>
+            <input id="modalPatientId" class="form-control" readonly>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Patient Phone</label>
+            <input id="modalPatientPhone" class="form-control" placeholder="+1-xxx-xxx-xxxx">
+          </div>
+        </div>
+
+        <div class="row g-2 mb-3 align-items-center">
+          <div class="col-md-6">
+            <label class="form-label">OTP</label>
+            <input id="modalOtpInput" class="form-control" placeholder="Enter 6-digit OTP" maxlength="6" inputmode="numeric" pattern="[0-9]*">
+          </div>
+          <div class="col-md-6 d-flex gap-2">
+            <button id="modalRequestOtpBtn" class="btn btn-outline-primary mt-4">Request OTP</button>
+            <button id="modalVerifyOtpBtn" class="btn btn-outline-success mt-4">Verify OTP</button>
+            <button id="modalCloseBtn" class="btn btn-secondary mt-4" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+        <div id="modalCountdown" class="mb-3 text-muted small d-none">
+          Access time remaining: <strong id="accessTimer">--:--</strong>
+        </div>
+
+        <hr>
+
+        <div id="modalPatientDetails" class="d-none">
+          <!-- patient details will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,7802 @@
+[
+  {
+    "id": 1,
+    "npi": "3350806568",
+    "name": "Dr. Jessica Williams",
+    "first_name": "Jessica",
+    "last_name": "Williams",
+    "specialty": "Internal Medicine",
+    "phone": "434-000-0000",
+    "email": "jessica.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "4391 Park Ln",
+      "line2": "Suite 145",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "11435"
+    },
+    "address_line1": "4391 Park Ln",
+    "address_line2": "",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "11435",
+    "license_number": "CA553066",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "npi": "3969949639",
+    "name": "Dr. Susan Miller",
+    "first_name": "Susan",
+    "last_name": "Miller",
+    "specialty": "Oncology",
+    "phone": "634-790-4266",
+    "email": "susan.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "8374 Main Blvd",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "32262"
+    },
+    "address_line1": "8374 Main Blvd",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "CA",
+    "zip_code": "00000",
+    "license_number": "CA968056",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "npi": "7503374667",
+    "name": "Dr. Robert Anderson",
+    "first_name": "Robert",
+    "last_name": "Anderson",
+    "specialty": "Oncology",
+    "phone": "811-619-5432",
+    "email": "robert.anderson@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "2768 Madison Rd",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "56053"
+    },
+    "address_line1": "2768 Madison Rd",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "56053",
+    "license_number": "CA466920",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "npi": "2139757122",
+    "name": "Dr. James Anderson",
+    "first_name": "James",
+    "last_name": "Anderson",
+    "specialty": "Anesthesiology",
+    "phone": "953-961-4076",
+    "email": "james.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "9778 Oak Ct",
+      "line2": "",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "24111"
+    },
+    "address_line1": "9778 Oak Ct",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "24111",
+    "license_number": "CA190435",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "npi": "7608224628",
+    "name": "Dr. Patricia Garcia",
+    "first_name": "Patricia",
+    "last_name": "Garcia",
+    "specialty": "General Practice",
+    "phone": "466-216-7252",
+    "email": "patricia.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "8889 First Ct",
+      "line2": "Suite 113",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "79845"
+    },
+    "address_line1": "8889 First Ct",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "79845",
+    "license_number": "IL122757",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "npi": "8509592049",
+    "name": "Dr. Richard Gonzalez",
+    "first_name": "Richard",
+    "last_name": "Gonzalez",
+    "specialty": "Ophthalmology",
+    "phone": "999-997-2691",
+    "email": "richard.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 993",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "34571"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "34571",
+    "license_number": "NY557875",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Ophthalmology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "npi": "3019789945",
+    "name": "Dr. Richard Garcia",
+    "first_name": "Richard",
+    "last_name": "Garcia",
+    "specialty": "Anesthesiology",
+    "phone": "224-303-3676",
+    "email": "richard.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "6083 Lake Ct",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "20835"
+    },
+    "address_line1": "6083 Lake Ct",
+    "address_line2": "",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "20835",
+    "license_number": "TX275850",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "npi": "6705831223",
+    "name": "Dr. Elizabeth Wilson",
+    "first_name": "Elizabeth",
+    "last_name": "Wilson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "261-534-3176",
+    "email": "elizabeth.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "8735 Main Way",
+      "line2": "Suite 880",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "55180"
+    },
+    "address_line1": "8735 Main Way",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "55180",
+    "license_number": "TX893850",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "npi": "9574738915",
+    "name": "Dr. Patricia Gonzalez",
+    "first_name": "Patricia",
+    "last_name": "Gonzalez",
+    "specialty": "Psychiatry",
+    "phone": "232-000-0000",
+    "email": "patricia.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "3269 Second Dr",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "22259"
+    },
+    "address_line1": "3269 Second Dr",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "22259",
+    "license_number": "TX233682",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "npi": "5161968617",
+    "name": "Dr. William Jones",
+    "first_name": "William",
+    "last_name": "Jones",
+    "specialty": "Emergency Medicine",
+    "phone": "728-864-3818",
+    "email": "william.jones@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "4996 Lake Dr",
+      "line2": "",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "30653"
+    },
+    "address_line1": "4996 Lake Dr",
+    "address_line2": "Suite 653",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "30653",
+    "license_number": "AZ475743",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 11,
+    "npi": "8689032735",
+    "name": "Dr. Patricia Brown",
+    "first_name": "Patricia",
+    "last_name": "Brown",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "742-629-9479",
+    "email": "patricia.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "4613 Oak Dr",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "29393"
+    },
+    "address_line1": "4613 Oak Dr",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "29393",
+    "license_number": "TX144665",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 12,
+    "npi": "5812139182",
+    "name": "Dr. Robert Anderson",
+    "first_name": "Robert",
+    "last_name": "Anderson",
+    "specialty": "General Practice",
+    "phone": "347-768-5452",
+    "email": "robert.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "2059 Park Ct",
+      "line2": "Suite 922",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "45617"
+    },
+    "address_line1": "2059 Park Ct",
+    "address_line2": "Suite 662",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "45617",
+    "license_number": "IL570709",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1995
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 13,
+    "npi": "3230841961",
+    "name": "Dr. Barbara Wilson",
+    "first_name": "Barbara",
+    "last_name": "Wilson",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "barbara.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "6252 Elm Ct",
+      "line2": "Suite 316",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "27272"
+    },
+    "address_line1": "6252 Elm Ct",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "27272",
+    "license_number": "IL490663",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 14,
+    "npi": "7676217165",
+    "name": "Dr. Jessica Gonzalez",
+    "first_name": "Jessica",
+    "last_name": "Gonzalez",
+    "specialty": "Neurology",
+    "phone": "563-219-2771",
+    "email": "jessica.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "4279 Lake Dr",
+      "line2": "Suite 968",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "97858"
+    },
+    "address_line1": "4279 Lake Dr",
+    "address_line2": "Suite 546",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "97858",
+    "license_number": "AZ483770",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 15,
+    "npi": "1578468164",
+    "name": "Dr. Jennifer Martinez",
+    "first_name": "Jennifer",
+    "last_name": "Martinez",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "787-615-4401",
+    "email": "",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "9547 Lake Dr",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "25100"
+    },
+    "address_line1": "9547 Lake Dr",
+    "address_line2": "Suite 493",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "25100",
+    "license_number": "FL101179",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 16,
+    "npi": "5485601243",
+    "name": "Dr. Elizabeth Wilson",
+    "first_name": "Elizabeth",
+    "last_name": "Wilson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "641-905-6523",
+    "email": "elizabeth.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "4559 Washington Blvd",
+      "line2": "Suite 383",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "57227"
+    },
+    "address_line1": "4559 Washington Blvd",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "57227",
+    "license_number": "PA498270",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 17,
+    "npi": "1088187273",
+    "name": "Dr. Mary Jones",
+    "first_name": "Mary",
+    "last_name": "Jones",
+    "specialty": "Radiology",
+    "phone": "421-406-2475",
+    "email": "mary.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "4250 Elm Ln",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "37320"
+    },
+    "address_line1": "4250 Elm Ln",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "37320",
+    "license_number": "TX554323",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 18,
+    "npi": "6460481790",
+    "name": "Dr. Susan Johnson",
+    "first_name": "Susan",
+    "last_name": "Johnson",
+    "specialty": "Cardiology",
+    "phone": "356-243-8222",
+    "email": "",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "5075 Lake Ln",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "50222"
+    },
+    "address_line1": "5075 Lake Ln",
+    "address_line2": "Suite 302",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "50222",
+    "license_number": "TX376992",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 19,
+    "npi": "7200809936",
+    "name": "Dr. Susan Gonzalez",
+    "first_name": "Susan",
+    "last_name": "Gonzalez",
+    "specialty": "Neurology",
+    "phone": "111-111-1111",
+    "email": "susan.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "2289 Main Ct",
+      "line2": "Suite 347",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "31961"
+    },
+    "address_line1": "2289 Main Ct",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "31961",
+    "license_number": "TX256692",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 20,
+    "npi": "6406572795",
+    "name": "Dr. David Rodriguez",
+    "first_name": "David",
+    "last_name": "Rodriguez",
+    "specialty": "Radiology",
+    "phone": "671-542-3136",
+    "email": "david.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "1316 Lake Ln",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "79890"
+    },
+    "address_line1": "1316 Lake Ln",
+    "address_line2": "Suite 880",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "79890",
+    "license_number": "IL820411",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 21,
+    "npi": "4769501419",
+    "name": "Dr. Michael Thomas",
+    "first_name": "Michael",
+    "last_name": "Thomas",
+    "specialty": "Emergency Medicine",
+    "phone": "111-111-1111",
+    "email": "michael.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "8460 Washington Ln",
+      "line2": "Suite 791",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "42166"
+    },
+    "address_line1": "8460 Washington Ln",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "42166",
+    "license_number": "TX830432",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 22,
+    "npi": "2557648344",
+    "name": "Dr. Mary Miller",
+    "first_name": "Mary",
+    "last_name": "Miller",
+    "specialty": "Neurology",
+    "phone": "586-503-2711",
+    "email": "mary.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "4052 Washington Ave",
+      "line2": "Suite 763",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "14820"
+    },
+    "address_line1": "4052 Washington Ave",
+    "address_line2": "Suite 140",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "14820",
+    "license_number": "TX537716",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 23,
+    "npi": "1869153929",
+    "name": "Dr. Jennifer Gonzalez",
+    "first_name": "Jennifer",
+    "last_name": "Gonzalez",
+    "specialty": "Internal Medicine",
+    "phone": "957-527-4942",
+    "email": "jennifer.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "6906 Lake Rd",
+      "line2": "Suite 287",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "81491"
+    },
+    "address_line1": "6906 Lake Rd",
+    "address_line2": "Suite 674",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "81491",
+    "license_number": "TX163157",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 24,
+    "npi": "6883503225",
+    "name": "Dr. John Jones",
+    "first_name": "John",
+    "last_name": "Jones",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "583-000-0000",
+    "email": "john.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "2680 Second Ln",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "83143"
+    },
+    "address_line1": "2680 Second Ln",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "83143",
+    "license_number": "TX253741",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 25,
+    "npi": "3890019621",
+    "name": "Dr. Barbara Lopez",
+    "first_name": "Barbara",
+    "last_name": "Lopez",
+    "specialty": "Emergency Medicine",
+    "phone": "660-709-8345",
+    "email": "barbara.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "3043 Lake Dr",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "48615"
+    },
+    "address_line1": "3043 Lake Dr",
+    "address_line2": "Suite 170",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "48615",
+    "license_number": "IL493716",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 26,
+    "npi": "6142061062",
+    "name": "Dr. David Smith",
+    "first_name": "David",
+    "last_name": "Smith",
+    "specialty": "Orthopedic Surgery",
+    "phone": "880-626-5990",
+    "email": "david.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "8989 Elm Blvd",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "97871"
+    },
+    "address_line1": "8989 Elm Blvd",
+    "address_line2": "Suite 301",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "97871",
+    "license_number": "NC242452",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 27,
+    "npi": "4657287378",
+    "name": "Dr. John Garcia",
+    "first_name": "John",
+    "last_name": "Garcia",
+    "specialty": "Family Medicine",
+    "phone": "768-485-5478",
+    "email": "",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "9188 First St",
+      "line2": "Suite 739",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "83806"
+    },
+    "address_line1": "9188 First St",
+    "address_line2": "Suite 565",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "83806",
+    "license_number": "TX930021",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 28,
+    "npi": "7599926234",
+    "name": "Dr. Patricia Lopez",
+    "first_name": "Patricia",
+    "last_name": "Lopez",
+    "specialty": "Pediatrics",
+    "phone": "877-203-8418",
+    "email": "patricia.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "7682 Main Dr",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "97158"
+    },
+    "address_line1": "7682 Main Dr",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "97158",
+    "license_number": "",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Pediatrics",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 29,
+    "npi": "7792911030",
+    "name": "Dr. Elizabeth Hernandez",
+    "first_name": "Elizabeth",
+    "last_name": "Hernandez",
+    "specialty": "Orthopedic Surgery",
+    "phone": "317-481-5369",
+    "email": "elizabeth.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "7433 Maple Ln",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "99753"
+    },
+    "address_line1": "7433 Maple Ln",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "99753",
+    "license_number": "CA769095",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 30,
+    "npi": "8122182034",
+    "name": "Dr. Jennifer Johnson",
+    "first_name": "Jennifer",
+    "last_name": "Johnson",
+    "specialty": "Internal Medicine",
+    "phone": "111-111-1111",
+    "email": "jennifer.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "633 Hill Ct",
+      "line2": "Suite 650",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "37170"
+    },
+    "address_line1": "633 Hill Ct",
+    "address_line2": "Suite 146",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "37170",
+    "license_number": "CA544900",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 31,
+    "npi": "3078353163",
+    "name": "Dr. Susan Smith",
+    "first_name": "Susan",
+    "last_name": "Smith",
+    "specialty": "Neurology",
+    "phone": "319-390-2694",
+    "email": "susan.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "6091 Jefferson St",
+      "line2": "Suite 639",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "40260"
+    },
+    "address_line1": "6091 Jefferson St",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "40260",
+    "license_number": "CA144362",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 32,
+    "npi": "6415896892",
+    "name": "Dr. Jennifer Thomas",
+    "first_name": "Jennifer",
+    "last_name": "Thomas",
+    "specialty": "Radiology",
+    "phone": "408-414-1791",
+    "email": "jennifer.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 762",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "46282"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 259",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "46282",
+    "license_number": "CA230038",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 33,
+    "npi": "1865791289",
+    "name": "Dr. Susan Thomas",
+    "first_name": "Susan",
+    "last_name": "Thomas",
+    "specialty": "Radiology",
+    "phone": "776-419-3457",
+    "email": "susan.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "9961 Hill Ave",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "36651"
+    },
+    "address_line1": "9961 Hill Ave",
+    "address_line2": "Suite 765",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "36651",
+    "license_number": "OH953697",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 34,
+    "npi": "5905809428",
+    "name": "Dr. Michael Gonzalez",
+    "first_name": "Michael",
+    "last_name": "Gonzalez",
+    "specialty": "Internal Medicine",
+    "phone": "864-703-2100",
+    "email": "michael.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 522",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "65105"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 861",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "65105",
+    "license_number": "NY886670",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 35,
+    "npi": "3356499385",
+    "name": "Dr. Barbara Williams",
+    "first_name": "Barbara",
+    "last_name": "Williams",
+    "specialty": "Orthopedic Surgery",
+    "phone": "464-570-4939",
+    "email": "barbara.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "229 Madison St",
+      "line2": "Suite 770",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "82669"
+    },
+    "address_line1": "229 Madison St",
+    "address_line2": "Suite 556",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "82669",
+    "license_number": "NY986638",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 36,
+    "npi": "1224875145",
+    "name": "Dr. Joseph Davis",
+    "first_name": "Joseph",
+    "last_name": "Davis",
+    "specialty": "General Practice",
+    "phone": "682-910-1767",
+    "email": "joseph.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "8304 Oak Dr",
+      "line2": "",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "48720"
+    },
+    "address_line1": "8304 Oak Dr",
+    "address_line2": "Suite 631",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "48720",
+    "license_number": "AZ471953",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 37,
+    "npi": "2647053112",
+    "name": "Dr. Patricia Anderson",
+    "first_name": "Patricia",
+    "last_name": "Anderson",
+    "specialty": "Orthopedic Surgery",
+    "phone": "541-805-7557",
+    "email": "patricia.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "218 Third Ave",
+      "line2": "Suite 201",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "10243"
+    },
+    "address_line1": "218 Third Ave",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "10243",
+    "license_number": "CA286171",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 38,
+    "npi": "1358524991",
+    "name": "Dr. Mary Gonzalez",
+    "first_name": "Mary",
+    "last_name": "Gonzalez",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "mary.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "811 Cedar Rd",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "96691"
+    },
+    "address_line1": "811 Cedar Rd",
+    "address_line2": "",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "96691",
+    "license_number": "TX693057",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 39,
+    "npi": "5253799335",
+    "name": "Dr. David Garcia",
+    "first_name": "David",
+    "last_name": "Garcia",
+    "specialty": "Urology",
+    "phone": "377-754-5759",
+    "email": "david.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "9908 Lake St",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "71037"
+    },
+    "address_line1": "9908 Lake St",
+    "address_line2": "",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "71037",
+    "license_number": "FL621631",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 40,
+    "npi": "9004677441",
+    "name": "Dr. Mary Williams",
+    "first_name": "Mary",
+    "last_name": "Williams",
+    "specialty": "Anesthesiology",
+    "phone": "695-984-2038",
+    "email": "mary.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "3461 Main St",
+      "line2": "Suite 105",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "17320"
+    },
+    "address_line1": "3461 Main St",
+    "address_line2": "Suite 330",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "17320",
+    "license_number": "CA517033",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 41,
+    "npi": "8946421269",
+    "name": "Dr. David Rodriguez",
+    "first_name": "David",
+    "last_name": "Rodriguez",
+    "specialty": "Orthopedic Surgery",
+    "phone": "514-403-8460",
+    "email": "david.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "7739 Maple Rd",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "35116"
+    },
+    "address_line1": "7739 Maple Rd",
+    "address_line2": "Suite 693",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "35116",
+    "license_number": "TX431235",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 42,
+    "npi": "6614582214",
+    "name": "Dr. Jessica Martinez",
+    "first_name": "Jessica",
+    "last_name": "Martinez",
+    "specialty": "Emergency Medicine",
+    "phone": "251-329-1630",
+    "email": "jessica.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "8778 Maple Ct",
+      "line2": "Suite 935",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "88446"
+    },
+    "address_line1": "8778 Maple Ct",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "TX",
+    "zip_code": "00000",
+    "license_number": "TX689975",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2007
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 43,
+    "npi": "5810977607",
+    "name": "Dr. Joseph Johnson",
+    "first_name": "Joseph",
+    "last_name": "Johnson",
+    "specialty": "Urology",
+    "phone": "257-272-5679",
+    "email": "joseph.johnson@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "1202 Fourth St",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "58198"
+    },
+    "address_line1": "1202 Fourth St",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "58198",
+    "license_number": "",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 44,
+    "npi": "6683681162",
+    "name": "Dr. Mary Anderson",
+    "first_name": "Mary",
+    "last_name": "Anderson",
+    "specialty": "Gastroenterology",
+    "phone": "378-268-5665",
+    "email": "mary.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "2500 Elm Blvd",
+      "line2": "Suite 202",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "17480"
+    },
+    "address_line1": "2500 Elm Blvd",
+    "address_line2": "Suite 413",
+    "city": "Old City",
+    "state": "CA",
+    "zip_code": "00000",
+    "license_number": "CA727444",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 45,
+    "npi": "9262198760",
+    "name": "Dr. Jessica Jones",
+    "first_name": "Jessica",
+    "last_name": "Jones",
+    "specialty": "Ophthalmology",
+    "phone": "720-818-7063",
+    "email": "jessica.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "407 Third St",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "46449"
+    },
+    "address_line1": "407 Third St",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "46449",
+    "license_number": "TX339143",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Ophthalmology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 46,
+    "npi": "5632034439",
+    "name": "Dr. Mary Smith",
+    "first_name": "Mary",
+    "last_name": "Smith",
+    "specialty": "Emergency Medicine",
+    "phone": "844-000-0000",
+    "email": "mary.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "2800 Hill Ave",
+      "line2": "Suite 232",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "40498"
+    },
+    "address_line1": "2800 Hill Ave",
+    "address_line2": "Suite 966",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "40498",
+    "license_number": "FL515054",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 47,
+    "npi": "8343728280",
+    "name": "Dr. James Williams",
+    "first_name": "James",
+    "last_name": "Williams",
+    "specialty": "Anesthesiology",
+    "phone": "353-592-4691",
+    "email": "james.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "8945 Hill Ave",
+      "line2": "Suite 801",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "64471"
+    },
+    "address_line1": "8945 Hill Ave",
+    "address_line2": "Suite 804",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "64471",
+    "license_number": "IL919020",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 48,
+    "npi": "2225764817",
+    "name": "Dr. Barbara Wilson",
+    "first_name": "Barbara",
+    "last_name": "Wilson",
+    "specialty": "Emergency Medicine",
+    "phone": "480-376-1073",
+    "email": "barbara.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 941",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "29341"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 967",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "29341",
+    "license_number": "AZ329221",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 49,
+    "npi": "6930196541",
+    "name": "Dr. Jennifer Martinez",
+    "first_name": "Jennifer",
+    "last_name": "Martinez",
+    "specialty": "Cardiology",
+    "phone": "111-111-1111",
+    "email": "jennifer.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "744 Fourth St",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "75203"
+    },
+    "address_line1": "744 Fourth St",
+    "address_line2": "Suite 970",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "75203",
+    "license_number": "NY439919",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 50,
+    "npi": "7172316228",
+    "name": "Dr. John Brown",
+    "first_name": "John",
+    "last_name": "Brown",
+    "specialty": "General Practice",
+    "phone": "741-513-3483",
+    "email": "john.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "464 Oak Dr",
+      "line2": "Suite 566",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "90651"
+    },
+    "address_line1": "464 Oak Dr",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "90651",
+    "license_number": "NC242907",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 51,
+    "npi": "9034439066",
+    "name": "Dr. David Thomas",
+    "first_name": "David",
+    "last_name": "Thomas",
+    "specialty": "Oncology",
+    "phone": "621-871-6591",
+    "email": "david.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "5582 Pine Ct",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "26691"
+    },
+    "address_line1": "5582 Pine Ct",
+    "address_line2": "Suite 358",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "26691",
+    "license_number": "OH334565",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 52,
+    "npi": "6504338167",
+    "name": "Dr. Susan Anderson",
+    "first_name": "Susan",
+    "last_name": "Anderson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "344-918-2007",
+    "email": "susan.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "62976"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 555",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "62976",
+    "license_number": "NY572587",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 53,
+    "npi": "5832157476",
+    "name": "Dr. Richard Hernandez",
+    "first_name": "Richard",
+    "last_name": "Hernandez",
+    "specialty": "Neurology",
+    "phone": "337-983-6341",
+    "email": "richard.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "5956 Second Dr",
+      "line2": "Suite 381",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "87768"
+    },
+    "address_line1": "5956 Second Dr",
+    "address_line2": "Suite 425",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "87768",
+    "license_number": "IL934639",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 54,
+    "npi": "8097087425",
+    "name": "Dr. Robert Williams",
+    "first_name": "Robert",
+    "last_name": "Williams",
+    "specialty": "Neurology",
+    "phone": "964-229-2946",
+    "email": "robert.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "3974 First Way",
+      "line2": "Suite 235",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "46897"
+    },
+    "address_line1": "3974 First Way",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "46897",
+    "license_number": "TX716189",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1995
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 55,
+    "npi": "2759552102",
+    "name": "Dr. Susan Lopez",
+    "first_name": "Susan",
+    "last_name": "Lopez",
+    "specialty": "Radiology",
+    "phone": "375-533-5124",
+    "email": "susan.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "4287 Fourth Rd",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "23697"
+    },
+    "address_line1": "4287 Fourth Rd",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "IL",
+    "zip_code": "00000",
+    "license_number": "IL566541",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 56,
+    "npi": "4731232110",
+    "name": "Dr. Susan Garcia",
+    "first_name": "Susan",
+    "last_name": "Garcia",
+    "specialty": "Internal Medicine",
+    "phone": "730-788-6984",
+    "email": "susan.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "86244"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 159",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "86244",
+    "license_number": "IL166010",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 57,
+    "npi": "9540309017",
+    "name": "Dr. Joseph Martinez",
+    "first_name": "Joseph",
+    "last_name": "Martinez",
+    "specialty": "Radiology",
+    "phone": "111-111-1111",
+    "email": "joseph.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "4587 First Way",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "53294"
+    },
+    "address_line1": "4587 First Way",
+    "address_line2": "Suite 707",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "53294",
+    "license_number": "NC358072",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 58,
+    "npi": "7225391605",
+    "name": "Dr. Patricia Brown",
+    "first_name": "Patricia",
+    "last_name": "Brown",
+    "specialty": "Internal Medicine",
+    "phone": "859-246-9277",
+    "email": "patricia.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "9425 Park Way",
+      "line2": "Suite 602",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "62744"
+    },
+    "address_line1": "9425 Park Way",
+    "address_line2": "",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "62744",
+    "license_number": "FL837824",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 59,
+    "npi": "1691278325",
+    "name": "Dr. Patricia Johnson",
+    "first_name": "Patricia",
+    "last_name": "Johnson",
+    "specialty": "Gastroenterology",
+    "phone": "206-532-7873",
+    "email": "patricia.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 255",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "92185"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 888",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "92185",
+    "license_number": "CA229638",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 60,
+    "npi": "4676957755",
+    "name": "Dr. Richard Jones",
+    "first_name": "Richard",
+    "last_name": "Jones",
+    "specialty": "Oncology",
+    "phone": "980-444-5168",
+    "email": "richard.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "2180 Madison Ct",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "65659"
+    },
+    "address_line1": "2180 Madison Ct",
+    "address_line2": "Suite 989",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "65659",
+    "license_number": "PA552540",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 61,
+    "npi": "1023385179",
+    "name": "Dr. John Rodriguez",
+    "first_name": "John",
+    "last_name": "Rodriguez",
+    "specialty": "Orthopedic Surgery",
+    "phone": "861-732-5291",
+    "email": "john.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "8047 Washington Rd",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "87387"
+    },
+    "address_line1": "8047 Washington Rd",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "87387",
+    "license_number": "TX880502",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 62,
+    "npi": "9383633135",
+    "name": "Dr. Patricia Miller",
+    "first_name": "Patricia",
+    "last_name": "Miller",
+    "specialty": "Family Medicine",
+    "phone": "940-256-4423",
+    "email": "patricia.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "6320 Pine Blvd",
+      "line2": "Suite 946",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "11736"
+    },
+    "address_line1": "6320 Pine Blvd",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "11736",
+    "license_number": "TX902736",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 63,
+    "npi": "7858709542",
+    "name": "Dr. Robert Gonzalez",
+    "first_name": "Robert",
+    "last_name": "Gonzalez",
+    "specialty": "Internal Medicine",
+    "phone": "382-000-0000",
+    "email": "robert.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "5191 Cedar Way",
+      "line2": "Suite 973",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "24651"
+    },
+    "address_line1": "5191 Cedar Way",
+    "address_line2": "Suite 328",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "24651",
+    "license_number": "AZ463384",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 64,
+    "npi": "7565728043",
+    "name": "Dr. Joseph Johnson",
+    "first_name": "Joseph",
+    "last_name": "Johnson",
+    "specialty": "Family Medicine",
+    "phone": "826-329-1053",
+    "email": "joseph.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "6390 Madison Rd",
+      "line2": "Suite 761",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "76863"
+    },
+    "address_line1": "6390 Madison Rd",
+    "address_line2": "Suite 720",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "76863",
+    "license_number": "PA552879",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 65,
+    "npi": "4289057813",
+    "name": "Dr. William Johnson",
+    "first_name": "William",
+    "last_name": "Johnson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "804-637-1817",
+    "email": "william.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "4737 Madison Way",
+      "line2": "Suite 369",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "34293"
+    },
+    "address_line1": "4737 Madison Way",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "34293",
+    "license_number": "CA187897",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 66,
+    "npi": "9571706027",
+    "name": "Dr. James Rodriguez",
+    "first_name": "James",
+    "last_name": "Rodriguez",
+    "specialty": "Orthopedic Surgery",
+    "phone": "458-440-1582",
+    "email": "",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "5785 Lake Ave",
+      "line2": "Suite 854",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "30482"
+    },
+    "address_line1": "5785 Lake Ave",
+    "address_line2": "Suite 163",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "30482",
+    "license_number": "TX841584",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 67,
+    "npi": "8446535622",
+    "name": "Dr. Patricia Johnson",
+    "first_name": "Patricia",
+    "last_name": "Johnson",
+    "specialty": "Psychiatry",
+    "phone": "386-763-5847",
+    "email": "patricia.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "3769 Park Ln",
+      "line2": "Suite 964",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "52786"
+    },
+    "address_line1": "3769 Park Ln",
+    "address_line2": "Suite 404",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "52786",
+    "license_number": "CA921388",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 68,
+    "npi": "7006316714",
+    "name": "Dr. Patricia Jones",
+    "first_name": "Patricia",
+    "last_name": "Jones",
+    "specialty": "Psychiatry",
+    "phone": "221-225-7287",
+    "email": "patricia.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "4730 Main Blvd",
+      "line2": "",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "34944"
+    },
+    "address_line1": "4730 Main Blvd",
+    "address_line2": "",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "34944",
+    "license_number": "AZ467724",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 69,
+    "npi": "1738816895",
+    "name": "Dr. Linda Wilson",
+    "first_name": "Linda",
+    "last_name": "Wilson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "454-855-3011",
+    "email": "linda.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "953 Oak Way",
+      "line2": "Suite 559",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "14362"
+    },
+    "address_line1": "953 Oak Way",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "14362",
+    "license_number": "TX138766",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 70,
+    "npi": "8682381428",
+    "name": "Dr. David Davis",
+    "first_name": "David",
+    "last_name": "Davis",
+    "specialty": "General Practice",
+    "phone": "634-809-3324",
+    "email": "david.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "5202 Lake Ct",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "34248"
+    },
+    "address_line1": "5202 Lake Ct",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "34248",
+    "license_number": "NY988333",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 71,
+    "npi": "3158520844",
+    "name": "Dr. William Brown",
+    "first_name": "William",
+    "last_name": "Brown",
+    "specialty": "Radiology",
+    "phone": "563-578-3563",
+    "email": "william.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "3999 Fourth Way",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "23817"
+    },
+    "address_line1": "3999 Fourth Way",
+    "address_line2": "Suite 788",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "23817",
+    "license_number": "CA979416",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 72,
+    "npi": "3537089291",
+    "name": "Dr. David Anderson",
+    "first_name": "David",
+    "last_name": "Anderson",
+    "specialty": "Emergency Medicine",
+    "phone": "581-230-6047",
+    "email": "david.anderson@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "4081 First St",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "37725"
+    },
+    "address_line1": "4081 First St",
+    "address_line2": "Suite 322",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "37725",
+    "license_number": "",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 73,
+    "npi": "9687001279",
+    "name": "Dr. James Jones",
+    "first_name": "James",
+    "last_name": "Jones",
+    "specialty": "Urology",
+    "phone": "997-793-7609",
+    "email": "james.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "3009 Oak Way",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "94364"
+    },
+    "address_line1": "3009 Oak Way",
+    "address_line2": "Suite 184",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "94364",
+    "license_number": "TX951356",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 74,
+    "npi": "8949295125",
+    "name": "Dr. Joseph Wilson",
+    "first_name": "Joseph",
+    "last_name": "Wilson",
+    "specialty": "Gastroenterology",
+    "phone": "682-000-0000",
+    "email": "joseph.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "7002 Pine Ct",
+      "line2": "Suite 827",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "60853"
+    },
+    "address_line1": "7002 Pine Ct",
+    "address_line2": "Suite 330",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "60853",
+    "license_number": "CA850546",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 75,
+    "npi": "6901256140",
+    "name": "Dr. Michael Williams",
+    "first_name": "Michael",
+    "last_name": "Williams",
+    "specialty": "Urology",
+    "phone": "468-000-0000",
+    "email": "michael.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "1460 Lake Dr",
+      "line2": "Suite 222",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "41191"
+    },
+    "address_line1": "1460 Lake Dr",
+    "address_line2": "Suite 665",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "41191",
+    "license_number": "CA831337",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 76,
+    "npi": "6558720342",
+    "name": "Dr. John Martinez",
+    "first_name": "John",
+    "last_name": "Martinez",
+    "specialty": "Anesthesiology",
+    "phone": "111-111-1111",
+    "email": "john.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "9748 Lake Ct",
+      "line2": "Suite 632",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "15706"
+    },
+    "address_line1": "9748 Lake Ct",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "15706",
+    "license_number": "TX883343",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 77,
+    "npi": "5102330423",
+    "name": "Dr. Robert Jones",
+    "first_name": "Robert",
+    "last_name": "Jones",
+    "specialty": "Oncology",
+    "phone": "503-362-1900",
+    "email": "robert.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "3475 Fourth Way",
+      "line2": "Suite 175",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "25801"
+    },
+    "address_line1": "3475 Fourth Way",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "25801",
+    "license_number": "NC385983",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 78,
+    "npi": "3524999888",
+    "name": "Dr. Mary Jones",
+    "first_name": "Mary",
+    "last_name": "Jones",
+    "specialty": "Dermatology",
+    "phone": "905-746-8212",
+    "email": "mary.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "8934 Oak Blvd",
+      "line2": "",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "72729"
+    },
+    "address_line1": "8934 Oak Blvd",
+    "address_line2": "Suite 730",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "72729",
+    "license_number": "TX368192",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 79,
+    "npi": "8075779607",
+    "name": "Dr. Linda Anderson",
+    "first_name": "Linda",
+    "last_name": "Anderson",
+    "specialty": "Cardiology",
+    "phone": "495-214-7212",
+    "email": "linda.anderson@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "5299 Third Ave",
+      "line2": "Suite 434",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "19051"
+    },
+    "address_line1": "5299 Third Ave",
+    "address_line2": "Suite 940",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "19051",
+    "license_number": "CA286346",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 80,
+    "npi": "3189192978",
+    "name": "Dr. James Jones",
+    "first_name": "James",
+    "last_name": "Jones",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "638-764-8817",
+    "email": "james.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "7132 Washington Ave",
+      "line2": "Suite 129",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "27278"
+    },
+    "address_line1": "7132 Washington Ave",
+    "address_line2": "",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "27278",
+    "license_number": "FL554242",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 81,
+    "npi": "1475451821",
+    "name": "Dr. John Davis",
+    "first_name": "John",
+    "last_name": "Davis",
+    "specialty": "Family Medicine",
+    "phone": "811-899-3322",
+    "email": "john.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "3461 First Way",
+      "line2": "Suite 716",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "99045"
+    },
+    "address_line1": "3461 First Way",
+    "address_line2": "Suite 961",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "99045",
+    "license_number": "TX995943",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 82,
+    "npi": "3716220358",
+    "name": "Dr. David Thomas",
+    "first_name": "David",
+    "last_name": "Thomas",
+    "specialty": "Oncology",
+    "phone": "673-443-6715",
+    "email": "david.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "6469 Second Way",
+      "line2": "Suite 855",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "16818"
+    },
+    "address_line1": "6469 Second Way",
+    "address_line2": "Suite 419",
+    "city": "Old City",
+    "state": "CA",
+    "zip_code": "00000",
+    "license_number": "CA596776",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 83,
+    "npi": "8785606814",
+    "name": "Dr. Richard Hernandez",
+    "first_name": "Richard",
+    "last_name": "Hernandez",
+    "specialty": "Pediatrics",
+    "phone": "379-893-9283",
+    "email": "richard.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "9725 Third Ave",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "22388"
+    },
+    "address_line1": "9725 Third Ave",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "22388",
+    "license_number": "NC284546",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Pediatrics",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 84,
+    "npi": "8287550492",
+    "name": "Dr. Mary Brown",
+    "first_name": "Mary",
+    "last_name": "Brown",
+    "specialty": "Emergency Medicine",
+    "phone": "888-000-0000",
+    "email": "mary.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "2559 Elm Dr",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "85525"
+    },
+    "address_line1": "2559 Elm Dr",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "85525",
+    "license_number": "TX831580",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 85,
+    "npi": "8101535081",
+    "name": "Dr. Patricia Gonzalez",
+    "first_name": "Patricia",
+    "last_name": "Gonzalez",
+    "specialty": "Radiology",
+    "phone": "338-288-6877",
+    "email": "",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "4653 Washington Ct",
+      "line2": "Suite 368",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "15052"
+    },
+    "address_line1": "4653 Washington Ct",
+    "address_line2": "Suite 986",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "15052",
+    "license_number": "CA367785",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 86,
+    "npi": "6121749496",
+    "name": "Dr. Jennifer Thomas",
+    "first_name": "Jennifer",
+    "last_name": "Thomas",
+    "specialty": "Radiology",
+    "phone": "774-364-7194",
+    "email": "jennifer.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "4016 Elm St",
+      "line2": "Suite 107",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "86440"
+    },
+    "address_line1": "4016 Elm St",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "86440",
+    "license_number": "PA545865",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 87,
+    "npi": "3425531266",
+    "name": "Dr. William Johnson",
+    "first_name": "William",
+    "last_name": "Johnson",
+    "specialty": "Psychiatry",
+    "phone": "783-262-7316",
+    "email": "william.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "6450 Cedar Way",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "90444"
+    },
+    "address_line1": "6450 Cedar Way",
+    "address_line2": "Suite 172",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "90444",
+    "license_number": "TX405651",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 88,
+    "npi": "8948764833",
+    "name": "Dr. William Hernandez",
+    "first_name": "William",
+    "last_name": "Hernandez",
+    "specialty": "Neurology",
+    "phone": "302-325-6785",
+    "email": "william.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "7575 Hill St",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "26526"
+    },
+    "address_line1": "7575 Hill St",
+    "address_line2": "Suite 917",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "26526",
+    "license_number": "IL106230",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 89,
+    "npi": "6107848849",
+    "name": "Dr. John Smith",
+    "first_name": "John",
+    "last_name": "Smith",
+    "specialty": "General Practice",
+    "phone": "360-207-8850",
+    "email": "john.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "4532 Pine St",
+      "line2": "Suite 133",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "74622"
+    },
+    "address_line1": "4532 Pine St",
+    "address_line2": "Suite 224",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "74622",
+    "license_number": "CA770158",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 90,
+    "npi": "7291319195",
+    "name": "Dr. James Williams",
+    "first_name": "James",
+    "last_name": "Williams",
+    "specialty": "General Practice",
+    "phone": "600-594-5468",
+    "email": "james.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "3731 Park Way",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "12570"
+    },
+    "address_line1": "3731 Park Way",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "12570",
+    "license_number": "CA988095",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 91,
+    "npi": "1666677945",
+    "name": "Dr. David Martinez",
+    "first_name": "David",
+    "last_name": "Martinez",
+    "specialty": "Psychiatry",
+    "phone": "393-720-6852",
+    "email": "david.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "701 Jefferson Blvd",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "62718"
+    },
+    "address_line1": "701 Jefferson Blvd",
+    "address_line2": "Suite 645",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "62718",
+    "license_number": "TX874367",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 92,
+    "npi": "3044376933",
+    "name": "Dr. John Williams",
+    "first_name": "John",
+    "last_name": "Williams",
+    "specialty": "Gastroenterology",
+    "phone": "581-887-7031",
+    "email": "john.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "9267 Washington Way",
+      "line2": "Suite 702",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "71613"
+    },
+    "address_line1": "9267 Washington Way",
+    "address_line2": "Suite 936",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "71613",
+    "license_number": "",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 93,
+    "npi": "2586857855",
+    "name": "Dr. James Anderson",
+    "first_name": "James",
+    "last_name": "Anderson",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "james.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "4513 Oak Ln",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "87857"
+    },
+    "address_line1": "4513 Oak Ln",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "87857",
+    "license_number": "PA442945",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 94,
+    "npi": "7982266030",
+    "name": "Dr. Susan Jones",
+    "first_name": "Susan",
+    "last_name": "Jones",
+    "specialty": "Cardiology",
+    "phone": "687-754-9822",
+    "email": "susan.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "720 Pine Blvd",
+      "line2": "Suite 539",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "33680"
+    },
+    "address_line1": "720 Pine Blvd",
+    "address_line2": "Suite 876",
+    "city": "Old City",
+    "state": "AZ",
+    "zip_code": "00000",
+    "license_number": "AZ421370",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 95,
+    "npi": "4152286972",
+    "name": "Dr. Barbara Martinez",
+    "first_name": "Barbara",
+    "last_name": "Martinez",
+    "specialty": "Dermatology",
+    "phone": "614-649-8981",
+    "email": "",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "9168 Elm Way",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "36852"
+    },
+    "address_line1": "9168 Elm Way",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "36852",
+    "license_number": "NY590201",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 96,
+    "npi": "7080756211",
+    "name": "Dr. Joseph Jones",
+    "first_name": "Joseph",
+    "last_name": "Jones",
+    "specialty": "Neurology",
+    "phone": "886-460-5290",
+    "email": "joseph.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "9285 Maple Blvd",
+      "line2": "Suite 593",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "12439"
+    },
+    "address_line1": "9285 Maple Blvd",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "OH",
+    "zip_code": "00000",
+    "license_number": "OH636176",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 97,
+    "npi": "4324143970",
+    "name": "Dr. Barbara Miller",
+    "first_name": "Barbara",
+    "last_name": "Miller",
+    "specialty": "Neurology",
+    "phone": "839-998-4581",
+    "email": "barbara.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 622",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "53664"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 620",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "53664",
+    "license_number": "PA753990",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1995
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 98,
+    "npi": "6802344861",
+    "name": "Dr. Linda Williams",
+    "first_name": "Linda",
+    "last_name": "Williams",
+    "specialty": "Urology",
+    "phone": "111-111-1111",
+    "email": "linda.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "2713 Cedar Ln",
+      "line2": "Suite 194",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "10828"
+    },
+    "address_line1": "2713 Cedar Ln",
+    "address_line2": "Suite 351",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "10828",
+    "license_number": "TX654341",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 99,
+    "npi": "4526779798",
+    "name": "Dr. James Rodriguez",
+    "first_name": "James",
+    "last_name": "Rodriguez",
+    "specialty": "Internal Medicine",
+    "phone": "211-357-5519",
+    "email": "james.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "3570 Maple Way",
+      "line2": "Suite 684",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "51044"
+    },
+    "address_line1": "3570 Maple Way",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "51044",
+    "license_number": "IL264031",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 100,
+    "npi": "9604970581",
+    "name": "Dr. Robert Jones",
+    "first_name": "Robert",
+    "last_name": "Jones",
+    "specialty": "Radiology",
+    "phone": "534-284-3361",
+    "email": "robert.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "3222 Main Ct",
+      "line2": "",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "52272"
+    },
+    "address_line1": "3222 Main Ct",
+    "address_line2": "Suite 157",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "52272",
+    "license_number": "TX568000",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1995
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 101,
+    "npi": "7906076113",
+    "name": "Dr. James Hernandez",
+    "first_name": "James",
+    "last_name": "Hernandez",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "774-000-0000",
+    "email": "james.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "8723 First Ave",
+      "line2": "Suite 935",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "52642"
+    },
+    "address_line1": "8723 First Ave",
+    "address_line2": "Suite 831",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "52642",
+    "license_number": "CA172057",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 102,
+    "npi": "2548654553",
+    "name": "Dr. Jennifer Jones",
+    "first_name": "Jennifer",
+    "last_name": "Jones",
+    "specialty": "Anesthesiology",
+    "phone": "894-356-5685",
+    "email": "jennifer.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "37919"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "37919",
+    "license_number": "CA604260",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2007
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 103,
+    "npi": "4957918709",
+    "name": "Dr. Elizabeth Rodriguez",
+    "first_name": "Elizabeth",
+    "last_name": "Rodriguez",
+    "specialty": "General Practice",
+    "phone": "210-648-2908",
+    "email": "elizabeth.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "4911 Jefferson Rd",
+      "line2": "Suite 782",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "93223"
+    },
+    "address_line1": "4911 Jefferson Rd",
+    "address_line2": "Suite 441",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "93223",
+    "license_number": "TX643198",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 104,
+    "npi": "6842246364",
+    "name": "Dr. Joseph Hernandez",
+    "first_name": "Joseph",
+    "last_name": "Hernandez",
+    "specialty": "Dermatology",
+    "phone": "537-757-9960",
+    "email": "joseph.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "3420 Elm St",
+      "line2": "Suite 197",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "28816"
+    },
+    "address_line1": "3420 Elm St",
+    "address_line2": "Suite 222",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "28816",
+    "license_number": "IL837562",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 105,
+    "npi": "6354520635",
+    "name": "Dr. David Brown",
+    "first_name": "David",
+    "last_name": "Brown",
+    "specialty": "Orthopedic Surgery",
+    "phone": "982-416-4549",
+    "email": "david.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "2098 Park Rd",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "37764"
+    },
+    "address_line1": "2098 Park Rd",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "37764",
+    "license_number": "NY487085",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 106,
+    "npi": "1259300984",
+    "name": "Dr. Susan Anderson",
+    "first_name": "Susan",
+    "last_name": "Anderson",
+    "specialty": "General Practice",
+    "phone": "310-792-4977",
+    "email": "susan.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "8997 Maple Blvd",
+      "line2": "",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "13758"
+    },
+    "address_line1": "8997 Maple Blvd",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "13758",
+    "license_number": "TX724165",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 107,
+    "npi": "2139473271",
+    "name": "Dr. James Hernandez",
+    "first_name": "James",
+    "last_name": "Hernandez",
+    "specialty": "Anesthesiology",
+    "phone": "748-316-9609",
+    "email": "james.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "8935 Washington Ln",
+      "line2": "Suite 504",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "41084"
+    },
+    "address_line1": "8935 Washington Ln",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "41084",
+    "license_number": "CA623536",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 108,
+    "npi": "4672515972",
+    "name": "Dr. John Garcia",
+    "first_name": "John",
+    "last_name": "Garcia",
+    "specialty": "Gastroenterology",
+    "phone": "648-875-8347",
+    "email": "",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "5293 Main Rd",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "72680"
+    },
+    "address_line1": "5293 Main Rd",
+    "address_line2": "Suite 236",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "72680",
+    "license_number": "NY700413",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 109,
+    "npi": "5986421660",
+    "name": "Dr. Susan Davis",
+    "first_name": "Susan",
+    "last_name": "Davis",
+    "specialty": "General Practice",
+    "phone": "478-529-5061",
+    "email": "susan.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "4677 Madison Rd",
+      "line2": "Suite 338",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "83393"
+    },
+    "address_line1": "4677 Madison Rd",
+    "address_line2": "Suite 105",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "83393",
+    "license_number": "NY186983",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Ophthalmology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 110,
+    "npi": "6138144654",
+    "name": "Dr. Jennifer Brown",
+    "first_name": "Jennifer",
+    "last_name": "Brown",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "820-281-9986",
+    "email": "jennifer.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "6894 Main Blvd",
+      "line2": "Suite 688",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "87909"
+    },
+    "address_line1": "6894 Main Blvd",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "87909",
+    "license_number": "TX435128",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 111,
+    "npi": "4450073357",
+    "name": "Dr. Jennifer Martinez",
+    "first_name": "Jennifer",
+    "last_name": "Martinez",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "685-938-6275",
+    "email": "jennifer.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "2157 Park Ave",
+      "line2": "Suite 818",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "58867"
+    },
+    "address_line1": "2157 Park Ave",
+    "address_line2": "",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "58867",
+    "license_number": "TX838843",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 112,
+    "npi": "9625279884",
+    "name": "Dr. Mary Lopez",
+    "first_name": "Mary",
+    "last_name": "Lopez",
+    "specialty": "Internal Medicine",
+    "phone": "846-203-6317",
+    "email": "mary.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "8063 Fourth Rd",
+      "line2": "Suite 642",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "90849"
+    },
+    "address_line1": "8063 Fourth Rd",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "90849",
+    "license_number": "TX668311",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2007
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 113,
+    "npi": "6993557256",
+    "name": "Dr. Richard Brown",
+    "first_name": "Richard",
+    "last_name": "Brown",
+    "specialty": "Dermatology",
+    "phone": "821-656-6809",
+    "email": "richard.brown@healthcare.com",
+    "website": "https://www.drbrownpractice.com",
+    "address": {
+      "line1": "6250 Lake Way",
+      "line2": "Suite 164",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "22042"
+    },
+    "address_line1": "6250 Lake Way",
+    "address_line2": "Suite 514",
+    "city": "Old City",
+    "state": "TX",
+    "zip_code": "00000",
+    "license_number": "TX168499",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 114,
+    "npi": "1336325074",
+    "name": "Dr. Barbara Garcia",
+    "first_name": "Barbara",
+    "last_name": "Garcia",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "barbara.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "6591 Pine Dr",
+      "line2": "Suite 449",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "33995"
+    },
+    "address_line1": "6591 Pine Dr",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "33995",
+    "license_number": "CA991272",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 115,
+    "npi": "7681669591",
+    "name": "Dr. Jennifer Smith",
+    "first_name": "Jennifer",
+    "last_name": "Smith",
+    "specialty": "Neurology",
+    "phone": "393-508-1798",
+    "email": "jennifer.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "5511 Second Ct",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "54796"
+    },
+    "address_line1": "5511 Second Ct",
+    "address_line2": "Suite 630",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "54796",
+    "license_number": "TX251431",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 116,
+    "npi": "4467071817",
+    "name": "Dr. Jennifer Anderson",
+    "first_name": "Jennifer",
+    "last_name": "Anderson",
+    "specialty": "Urology",
+    "phone": "797-315-2190",
+    "email": "jennifer.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "4918 Pine St",
+      "line2": "Suite 937",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "37217"
+    },
+    "address_line1": "4918 Pine St",
+    "address_line2": "Suite 124",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "37217",
+    "license_number": "CA894195",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 117,
+    "npi": "6625488295",
+    "name": "Dr. Elizabeth Garcia",
+    "first_name": "Elizabeth",
+    "last_name": "Garcia",
+    "specialty": "Cardiology",
+    "phone": "788-734-8947",
+    "email": "elizabeth.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "2240 Washington Ct",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "17842"
+    },
+    "address_line1": "2240 Washington Ct",
+    "address_line2": "Suite 477",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "17842",
+    "license_number": "TX728771",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 118,
+    "npi": "4746615958",
+    "name": "Dr. Mary Hernandez",
+    "first_name": "Mary",
+    "last_name": "Hernandez",
+    "specialty": "Neurology",
+    "phone": "841-315-1178",
+    "email": "mary.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "69240"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 809",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "69240",
+    "license_number": "CA756540",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2012
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 119,
+    "npi": "3325540602",
+    "name": "Dr. Jennifer Davis",
+    "first_name": "Jennifer",
+    "last_name": "Davis",
+    "specialty": "Cardiology",
+    "phone": "594-296-9007",
+    "email": "jennifer.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "7800 Park St",
+      "line2": "Suite 644",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "97455"
+    },
+    "address_line1": "7800 Park St",
+    "address_line2": "Suite 913",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "97455",
+    "license_number": "CA524991",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 120,
+    "npi": "5118136507",
+    "name": "Dr. Linda Gonzalez",
+    "first_name": "Linda",
+    "last_name": "Gonzalez",
+    "specialty": "Internal Medicine",
+    "phone": "692-771-2851",
+    "email": "",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "5340 Elm Ln",
+      "line2": "Suite 257",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "64175"
+    },
+    "address_line1": "5340 Elm Ln",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "64175",
+    "license_number": "TX746411",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 121,
+    "npi": "5022007039",
+    "name": "Dr. Joseph Garcia",
+    "first_name": "Joseph",
+    "last_name": "Garcia",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "899-647-2014",
+    "email": "joseph.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "66510"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 817",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "66510",
+    "license_number": "OH971944",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 122,
+    "npi": "3944320722",
+    "name": "Dr. Jessica Johnson",
+    "first_name": "Jessica",
+    "last_name": "Johnson",
+    "specialty": "Internal Medicine",
+    "phone": "249-769-3088",
+    "email": "jessica.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "9638 Lake Way",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "61090"
+    },
+    "address_line1": "9638 Lake Way",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "61090",
+    "license_number": "PA272519",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 123,
+    "npi": "2586213549",
+    "name": "Dr. Robert Smith",
+    "first_name": "Robert",
+    "last_name": "Smith",
+    "specialty": "Urology",
+    "phone": "482-823-4618",
+    "email": "robert.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "502 Second Way",
+      "line2": "",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "89789"
+    },
+    "address_line1": "502 Second Way",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "89789",
+    "license_number": "CA179291",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 124,
+    "npi": "9941287458",
+    "name": "Dr. David Wilson",
+    "first_name": "David",
+    "last_name": "Wilson",
+    "specialty": "Radiology",
+    "phone": "763-596-2566",
+    "email": "david.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "2960 Jefferson Ave",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "26305"
+    },
+    "address_line1": "2960 Jefferson Ave",
+    "address_line2": "Suite 586",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "26305",
+    "license_number": "TX559101",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 125,
+    "npi": "9037479322",
+    "name": "Dr. Richard Garcia",
+    "first_name": "Richard",
+    "last_name": "Garcia",
+    "specialty": "Neurology",
+    "phone": "540-736-5830",
+    "email": "richard.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "4264 Cedar Way",
+      "line2": "Suite 157",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "17121"
+    },
+    "address_line1": "4264 Cedar Way",
+    "address_line2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "17121",
+    "license_number": "CA265531",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 126,
+    "npi": "8750951419",
+    "name": "Dr. Patricia Wilson",
+    "first_name": "Patricia",
+    "last_name": "Wilson",
+    "specialty": "Family Medicine",
+    "phone": "950-361-6849",
+    "email": "patricia.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 633",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "77759"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "77759",
+    "license_number": "IL209086",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 127,
+    "npi": "3374672739",
+    "name": "Dr. Michael Rodriguez",
+    "first_name": "Michael",
+    "last_name": "Rodriguez",
+    "specialty": "Ophthalmology",
+    "phone": "319-768-8240",
+    "email": "",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "4256 Oak Ct",
+      "line2": "Suite 859",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "94617"
+    },
+    "address_line1": "4256 Oak Ct",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "94617",
+    "license_number": "CA326427",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Ophthalmology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 128,
+    "npi": "5801789721",
+    "name": "Dr. Linda Williams",
+    "first_name": "Linda",
+    "last_name": "Williams",
+    "specialty": "Anesthesiology",
+    "phone": "799-747-2857",
+    "email": "linda.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "9448 Jefferson Way",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "14920"
+    },
+    "address_line1": "9448 Jefferson Way",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "TX",
+    "zip_code": "00000",
+    "license_number": "TX959813",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 129,
+    "npi": "5138382884",
+    "name": "Dr. Susan Gonzalez",
+    "first_name": "Susan",
+    "last_name": "Gonzalez",
+    "specialty": "Gastroenterology",
+    "phone": "724-432-5397",
+    "email": "susan.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "2667 Fourth Blvd",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "59947"
+    },
+    "address_line1": "2667 Fourth Blvd",
+    "address_line2": "",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "59947",
+    "license_number": "CA761342",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 130,
+    "npi": "1254154692",
+    "name": "Dr. David Martinez",
+    "first_name": "David",
+    "last_name": "Martinez",
+    "specialty": "Orthopedic Surgery",
+    "phone": "111-111-1111",
+    "email": "david.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "4202 Jefferson Dr",
+      "line2": "Suite 741",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "54672"
+    },
+    "address_line1": "4202 Jefferson Dr",
+    "address_line2": "Suite 666",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "54672",
+    "license_number": "CA205011",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 131,
+    "npi": "4182972033",
+    "name": "Dr. Joseph Rodriguez",
+    "first_name": "Joseph",
+    "last_name": "Rodriguez",
+    "specialty": "Gastroenterology",
+    "phone": "506-970-6102",
+    "email": "joseph.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "2321 Washington Ln",
+      "line2": "Suite 819",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "56736"
+    },
+    "address_line1": "2321 Washington Ln",
+    "address_line2": "Suite 812",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "56736",
+    "license_number": "IL510250",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 132,
+    "npi": "7781862212",
+    "name": "Dr. Mary Rodriguez",
+    "first_name": "Mary",
+    "last_name": "Rodriguez",
+    "specialty": "Radiology",
+    "phone": "858-599-6347",
+    "email": "mary.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "735 Second Blvd",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "12214"
+    },
+    "address_line1": "735 Second Blvd",
+    "address_line2": "",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "12214",
+    "license_number": "OH580339",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 133,
+    "npi": "6374287497",
+    "name": "Dr. John Anderson",
+    "first_name": "John",
+    "last_name": "Anderson",
+    "specialty": "Cardiology",
+    "phone": "776-368-1747",
+    "email": "john.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "9935 Oak Ct",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "63821"
+    },
+    "address_line1": "9935 Oak Ct",
+    "address_line2": "Suite 828",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "63821",
+    "license_number": "TX739215",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 134,
+    "npi": "9787472443",
+    "name": "Dr. Linda Thomas",
+    "first_name": "Linda",
+    "last_name": "Thomas",
+    "specialty": "Cardiology",
+    "phone": "517-785-6636",
+    "email": "linda.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "918 Cedar Ln",
+      "line2": "",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "83988"
+    },
+    "address_line1": "918 Cedar Ln",
+    "address_line2": "Suite 922",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "83988",
+    "license_number": "",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 135,
+    "npi": "1147714284",
+    "name": "Dr. Linda Davis",
+    "first_name": "Linda",
+    "last_name": "Davis",
+    "specialty": "Family Medicine",
+    "phone": "853-957-2103",
+    "email": "linda.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "4981 Lake Dr",
+      "line2": "Suite 421",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "44589"
+    },
+    "address_line1": "4981 Lake Dr",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "44589",
+    "license_number": "TX619758",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 136,
+    "npi": "7809605993",
+    "name": "Dr. William Anderson",
+    "first_name": "William",
+    "last_name": "Anderson",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "778-586-8194",
+    "email": "william.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "6071 Second Way",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "20366"
+    },
+    "address_line1": "6071 Second Way",
+    "address_line2": "Suite 204",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "20366",
+    "license_number": "TX413918",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 137,
+    "npi": "3975678451",
+    "name": "Dr. Susan Johnson",
+    "first_name": "Susan",
+    "last_name": "Johnson",
+    "specialty": "Oncology",
+    "phone": "396-851-7578",
+    "email": "susan.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "7291 Jefferson St",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "41073"
+    },
+    "address_line1": "7291 Jefferson St",
+    "address_line2": "Suite 956",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "41073",
+    "license_number": "PA974987",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 138,
+    "npi": "9204368118",
+    "name": "Dr. Jennifer Wilson",
+    "first_name": "Jennifer",
+    "last_name": "Wilson",
+    "specialty": "Emergency Medicine",
+    "phone": "904-393-4161",
+    "email": "jennifer.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "9062 Cedar Rd",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "55126"
+    },
+    "address_line1": "9062 Cedar Rd",
+    "address_line2": "Suite 868",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "55126",
+    "license_number": "TX287135",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 139,
+    "npi": "8187630711",
+    "name": "Dr. Richard Williams",
+    "first_name": "Richard",
+    "last_name": "Williams",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "325-363-7123",
+    "email": "richard.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "6933 Oak St",
+      "line2": "Suite 714",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "11022"
+    },
+    "address_line1": "6933 Oak St",
+    "address_line2": "Suite 368",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "11022",
+    "license_number": "CA691241",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 140,
+    "npi": "7391386781",
+    "name": "Dr. Elizabeth Williams",
+    "first_name": "Elizabeth",
+    "last_name": "Williams",
+    "specialty": "Internal Medicine",
+    "phone": "817-661-5400",
+    "email": "elizabeth.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "33133"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "33133",
+    "license_number": "TX680086",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 141,
+    "npi": "4546421999",
+    "name": "Dr. Michael Brown",
+    "first_name": "Michael",
+    "last_name": "Brown",
+    "specialty": "Internal Medicine",
+    "phone": "566-726-5501",
+    "email": "michael.brown@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "253 Jefferson Ct",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "64011"
+    },
+    "address_line1": "253 Jefferson Ct",
+    "address_line2": "Suite 174",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "64011",
+    "license_number": "PA503288",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 142,
+    "npi": "4629803676",
+    "name": "Dr. Patricia Johnson",
+    "first_name": "Patricia",
+    "last_name": "Johnson",
+    "specialty": "Oncology",
+    "phone": "747-766-4954",
+    "email": "patricia.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "1909 Oak St",
+      "line2": "Suite 542",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "78025"
+    },
+    "address_line1": "1909 Oak St",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "78025",
+    "license_number": "NC595847",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 143,
+    "npi": "2486727397",
+    "name": "Dr. Joseph Martinez",
+    "first_name": "Joseph",
+    "last_name": "Martinez",
+    "specialty": "General Practice",
+    "phone": "473-226-6793",
+    "email": "joseph.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "8509 Elm Dr",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "10787"
+    },
+    "address_line1": "8509 Elm Dr",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "10787",
+    "license_number": "PA806660",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 144,
+    "npi": "6834826578",
+    "name": "Dr. Mary Wilson",
+    "first_name": "Mary",
+    "last_name": "Wilson",
+    "specialty": "Family Medicine",
+    "phone": "111-111-1111",
+    "email": "mary.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "2506 Cedar Ct",
+      "line2": "",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "61115"
+    },
+    "address_line1": "2506 Cedar Ct",
+    "address_line2": "Suite 957",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "61115",
+    "license_number": "TX597551",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 145,
+    "npi": "1060930587",
+    "name": "Dr. Linda Lopez",
+    "first_name": "Linda",
+    "last_name": "Lopez",
+    "specialty": "Internal Medicine",
+    "phone": "725-283-4968",
+    "email": "linda.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "5321 Oak St",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "71679"
+    },
+    "address_line1": "5321 Oak St",
+    "address_line2": "",
+    "city": "Old City",
+    "state": "OH",
+    "zip_code": "00000",
+    "license_number": "OH543371",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 146,
+    "npi": "6148872445",
+    "name": "Dr. Michael Johnson",
+    "first_name": "Michael",
+    "last_name": "Johnson",
+    "specialty": "Cardiology",
+    "phone": "777-851-1153",
+    "email": "michael.johnson@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "6023 Fourth Rd",
+      "line2": "Suite 406",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "47322"
+    },
+    "address_line1": "6023 Fourth Rd",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "47322",
+    "license_number": "NY168326",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 147,
+    "npi": "2211438456",
+    "name": "Dr. Barbara Johnson",
+    "first_name": "Barbara",
+    "last_name": "Johnson",
+    "specialty": "Emergency Medicine",
+    "phone": "313-574-5809",
+    "email": "barbara.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "43978"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 220",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "43978",
+    "license_number": "OH919030",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 148,
+    "npi": "6156407966",
+    "name": "Dr. John Smith",
+    "first_name": "John",
+    "last_name": "Smith",
+    "specialty": "Family Medicine",
+    "phone": "427-590-4198",
+    "email": "john.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "5958 Main Ave",
+      "line2": "Suite 940",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "94232"
+    },
+    "address_line1": "5958 Main Ave",
+    "address_line2": "",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "94232",
+    "license_number": "TX186818",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 149,
+    "npi": "6922234806",
+    "name": "Dr. Jennifer Martinez",
+    "first_name": "Jennifer",
+    "last_name": "Martinez",
+    "specialty": "Radiology",
+    "phone": "493-200-6521",
+    "email": "jennifer.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "5748 Third Dr",
+      "line2": "",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "78644"
+    },
+    "address_line1": "5748 Third Dr",
+    "address_line2": "Suite 294",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "78644",
+    "license_number": "TX717769",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 150,
+    "npi": "2202699966",
+    "name": "Dr. Barbara Jones",
+    "first_name": "Barbara",
+    "last_name": "Jones",
+    "specialty": "Urology",
+    "phone": "899-000-0000",
+    "email": "barbara.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "8413 Third Ave",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "63419"
+    },
+    "address_line1": "8413 Third Ave",
+    "address_line2": "Suite 171",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "63419",
+    "license_number": "TX653786",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 151,
+    "npi": "3501872952",
+    "name": "Dr. Jessica Thomas",
+    "first_name": "Jessica",
+    "last_name": "Thomas",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "905-255-5784",
+    "email": "jessica.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "8755 Second Ave",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "28456"
+    },
+    "address_line1": "8755 Second Ave",
+    "address_line2": "Suite 876",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "28456",
+    "license_number": "CA461703",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2007
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 152,
+    "npi": "4429162104",
+    "name": "Dr. John Thomas",
+    "first_name": "John",
+    "last_name": "Thomas",
+    "specialty": "Family Medicine",
+    "phone": "712-293-6754",
+    "email": "john.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "2192 Cedar Ln",
+      "line2": "Suite 739",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "23941"
+    },
+    "address_line1": "2192 Cedar Ln",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "23941",
+    "license_number": "TX318085",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 153,
+    "npi": "4513652893",
+    "name": "Dr. Linda Anderson",
+    "first_name": "Linda",
+    "last_name": "Anderson",
+    "specialty": "Neurology",
+    "phone": "471-247-5921",
+    "email": "linda.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "3804 Fourth Ct",
+      "line2": "Suite 972",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "53530"
+    },
+    "address_line1": "3804 Fourth Ct",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "53530",
+    "license_number": "CA838980",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 154,
+    "npi": "4151968166",
+    "name": "Dr. James Hernandez",
+    "first_name": "James",
+    "last_name": "Hernandez",
+    "specialty": "Dermatology",
+    "phone": "494-558-2339",
+    "email": "james.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "2495 Washington Ave",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "86443"
+    },
+    "address_line1": "2495 Washington Ave",
+    "address_line2": "Suite 364",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "86443",
+    "license_number": "FL951202",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 155,
+    "npi": "3117623072",
+    "name": "Dr. James Miller",
+    "first_name": "James",
+    "last_name": "Miller",
+    "specialty": "Orthopedic Surgery",
+    "phone": "852-963-4179",
+    "email": "james.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "9467 Park St",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "70149"
+    },
+    "address_line1": "9467 Park St",
+    "address_line2": "Suite 756",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "70149",
+    "license_number": "PA406424",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 156,
+    "npi": "6875710210",
+    "name": "Dr. John Smith",
+    "first_name": "John",
+    "last_name": "Smith",
+    "specialty": "Neurology",
+    "phone": "895-626-7761",
+    "email": "john.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "2654 Lake Blvd",
+      "line2": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "70478"
+    },
+    "address_line1": "2654 Lake Blvd",
+    "address_line2": "Suite 220",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "70478",
+    "license_number": "CA674948",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 157,
+    "npi": "4784046202",
+    "name": "Dr. Elizabeth Jones",
+    "first_name": "Elizabeth",
+    "last_name": "Jones",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "865-251-6611",
+    "email": "elizabeth.jones@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "7824 Oak St",
+      "line2": "Suite 661",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "45669"
+    },
+    "address_line1": "7824 Oak St",
+    "address_line2": "Suite 563",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "45669",
+    "license_number": "CA193593",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 158,
+    "npi": "2909983967",
+    "name": "Dr. Jessica Thomas",
+    "first_name": "Jessica",
+    "last_name": "Thomas",
+    "specialty": "General Practice",
+    "phone": "821-288-9786",
+    "email": "jessica.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "1825 Jefferson Rd",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "25309"
+    },
+    "address_line1": "1825 Jefferson Rd",
+    "address_line2": "",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "25309",
+    "license_number": "CA365956",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Internal Medicine",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 159,
+    "npi": "6394663461",
+    "name": "Dr. Michael Davis",
+    "first_name": "Michael",
+    "last_name": "Davis",
+    "specialty": "Dermatology",
+    "phone": "981-441-5721",
+    "email": "michael.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "7138 Elm Ave",
+      "line2": "Suite 392",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "76989"
+    },
+    "address_line1": "7138 Elm Ave",
+    "address_line2": "Suite 785",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "76989",
+    "license_number": "NC485805",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 160,
+    "npi": "3143461013",
+    "name": "Dr. William Martinez",
+    "first_name": "William",
+    "last_name": "Martinez",
+    "specialty": "Psychiatry",
+    "phone": "111-111-1111",
+    "email": "william.martinez@healthcare.com",
+    "website": "https://www.drmartinezpractice.com",
+    "address": {
+      "line1": "6847 First Ln",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "89828"
+    },
+    "address_line1": "6847 First Ln",
+    "address_line2": "Suite 776",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "89828",
+    "license_number": "CA847589",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2012
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 161,
+    "npi": "1584819496",
+    "name": "Dr. William Gonzalez",
+    "first_name": "William",
+    "last_name": "Gonzalez",
+    "specialty": "Urology",
+    "phone": "714-344-7767",
+    "email": "",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "7598 Madison Ct",
+      "line2": "Suite 545",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "56399"
+    },
+    "address_line1": "7598 Madison Ct",
+    "address_line2": "Suite 394",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "56399",
+    "license_number": "AZ304669",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 162,
+    "npi": "3970790561",
+    "name": "Dr. Michael Gonzalez",
+    "first_name": "Michael",
+    "last_name": "Gonzalez",
+    "specialty": "Neurology",
+    "phone": "111-111-1111",
+    "email": "michael.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "2112 Madison Rd",
+      "line2": "Suite 757",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "70176"
+    },
+    "address_line1": "2112 Madison Rd",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "70176",
+    "license_number": "TX399088",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 163,
+    "npi": "6751535138",
+    "name": "Dr. Richard Anderson",
+    "first_name": "Richard",
+    "last_name": "Anderson",
+    "specialty": "Ophthalmology",
+    "phone": "486-907-8310",
+    "email": "richard.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "Suite 120",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "12261"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "12261",
+    "license_number": "CA465938",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Ophthalmology",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 164,
+    "npi": "1203520475",
+    "name": "Dr. John Williams",
+    "first_name": "John",
+    "last_name": "Williams",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "john.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "7390 Oak Ct",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "81986"
+    },
+    "address_line1": "7390 Oak Ct",
+    "address_line2": "",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "81986",
+    "license_number": "TX822378",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 165,
+    "npi": "9220700853",
+    "name": "Dr. Mary Rodriguez",
+    "first_name": "Mary",
+    "last_name": "Rodriguez",
+    "specialty": "Psychiatry",
+    "phone": "238-895-5422",
+    "email": "mary.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "2687 Cedar Rd",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "74755"
+    },
+    "address_line1": "2687 Cedar Rd",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "74755",
+    "license_number": "IL836211",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Psychiatry",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 166,
+    "npi": "6916846475",
+    "name": "Dr. John Smith",
+    "first_name": "John",
+    "last_name": "Smith",
+    "specialty": "Cardiology",
+    "phone": "678-000-0000",
+    "email": "john.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "4078 Pine Blvd",
+      "line2": "Suite 863",
+      "city": "Columbus",
+      "state": "OH",
+      "zip_code": "88186"
+    },
+    "address_line1": "4078 Pine Blvd",
+    "address_line2": "Suite 117",
+    "city": "Columbus",
+    "state": "OH",
+    "zip_code": "88186",
+    "license_number": "OH704088",
+    "license_state": "OH",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 167,
+    "npi": "3328731286",
+    "name": "Dr. Linda Brown",
+    "first_name": "Linda",
+    "last_name": "Brown",
+    "specialty": "Pediatrics",
+    "phone": "460-429-8090",
+    "email": "linda.brown@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "900 Lake Ct",
+      "line2": "",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "59978"
+    },
+    "address_line1": "900 Lake Ct",
+    "address_line2": "Suite 133",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "59978",
+    "license_number": "CA281745",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Pediatrics",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 168,
+    "npi": "9575258777",
+    "name": "Dr. Linda Hernandez",
+    "first_name": "Linda",
+    "last_name": "Hernandez",
+    "specialty": "Oncology",
+    "phone": "474-779-9205",
+    "email": "linda.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "7338 Washington Ave",
+      "line2": "Suite 352",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "91207"
+    },
+    "address_line1": "7338 Washington Ave",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "91207",
+    "license_number": "CA697032",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 169,
+    "npi": "3476619125",
+    "name": "Dr. Mary Davis",
+    "first_name": "Mary",
+    "last_name": "Davis",
+    "specialty": "Radiology",
+    "phone": "518-935-4767",
+    "email": "mary.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "2395 Maple Blvd",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "67018"
+    },
+    "address_line1": "2395 Maple Blvd",
+    "address_line2": "",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "67018",
+    "license_number": "FL813049",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 170,
+    "npi": "3037232133",
+    "name": "Dr. Barbara Williams",
+    "first_name": "Barbara",
+    "last_name": "Williams",
+    "specialty": "Emergency Medicine",
+    "phone": "313-617-5110",
+    "email": "barbara.williams@healthcare.com",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "5070 Hill Ave",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "33740"
+    },
+    "address_line1": "5070 Hill Ave",
+    "address_line2": "Suite 571",
+    "city": "Old City",
+    "state": "FL",
+    "zip_code": "00000",
+    "license_number": "FL445694",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1999
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 171,
+    "npi": "1718758925",
+    "name": "Dr. John Miller",
+    "first_name": "John",
+    "last_name": "Miller",
+    "specialty": "General Practice",
+    "phone": "479-329-5596",
+    "email": "john.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "7268 Cedar St",
+      "line2": "Suite 548",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "84471"
+    },
+    "address_line1": "7268 Cedar St",
+    "address_line2": "Suite 983",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "84471",
+    "license_number": "TX795157",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Pediatrics",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 172,
+    "npi": "7205851240",
+    "name": "Dr. Jessica Gonzalez",
+    "first_name": "Jessica",
+    "last_name": "Gonzalez",
+    "specialty": "Radiology",
+    "phone": "392-395-7771",
+    "email": "jessica.gonzalez@healthcare.com",
+    "website": "https://www.drgonzalezpractice.com",
+    "address": {
+      "line1": "523 Third Ct",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip_code": "50066"
+    },
+    "address_line1": "523 Third Ct",
+    "address_line2": "Suite 937",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip_code": "50066",
+    "license_number": "CA637244",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 173,
+    "npi": "7836298104",
+    "name": "Dr. James Hernandez",
+    "first_name": "James",
+    "last_name": "Hernandez",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "659-242-7320",
+    "email": "james.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "1252 Elm Blvd",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "84645"
+    },
+    "address_line1": "1252 Elm Blvd",
+    "address_line2": "Suite 254",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "84645",
+    "license_number": "NC676338",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2020
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2006
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 174,
+    "npi": "1563804895",
+    "name": "Dr. Linda Smith",
+    "first_name": "Linda",
+    "last_name": "Smith",
+    "specialty": "Dermatology",
+    "phone": "111-111-1111",
+    "email": "linda.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "4358 Cedar Dr",
+      "line2": "Suite 311",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "62015"
+    },
+    "address_line1": "4358 Cedar Dr",
+    "address_line2": "Suite 494",
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "62015",
+    "license_number": "FL767338",
+    "license_state": "FL",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 175,
+    "npi": "7367240655",
+    "name": "Dr. Joseph Hernandez",
+    "first_name": "Joseph",
+    "last_name": "Hernandez",
+    "specialty": "Radiology",
+    "phone": "463-835-1841",
+    "email": "joseph.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "1764 Oak St",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "23278"
+    },
+    "address_line1": "1764 Oak St",
+    "address_line2": "",
+    "city": "Chicago",
+    "state": "IL",
+    "zip_code": "23278",
+    "license_number": "IL828788",
+    "license_state": "IL",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 176,
+    "npi": "5950663394",
+    "name": "Dr. Joseph Garcia",
+    "first_name": "Joseph",
+    "last_name": "Garcia",
+    "specialty": "Gastroenterology",
+    "phone": "741-000-0000",
+    "email": "joseph.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "8927 Second Rd",
+      "line2": "",
+      "city": "Fort Worth",
+      "state": "TX",
+      "zip_code": "94365"
+    },
+    "address_line1": "8927 Second Rd",
+    "address_line2": "Suite 889",
+    "city": "Fort Worth",
+    "state": "TX",
+    "zip_code": "94365",
+    "license_number": "TX810531",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2007
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 177,
+    "npi": "2914763019",
+    "name": "Dr. Joseph Williams",
+    "first_name": "Joseph",
+    "last_name": "Williams",
+    "specialty": "Anesthesiology",
+    "phone": "578-926-2803",
+    "email": "",
+    "website": "https://www.drwilliamspractice.com",
+    "address": {
+      "line1": "8588 Park Way",
+      "line2": "Suite 202",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "19865"
+    },
+    "address_line1": "8588 Park Way",
+    "address_line2": "Suite 145",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "19865",
+    "license_number": "CA319429",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 178,
+    "npi": "6856491499",
+    "name": "Dr. Robert Rodriguez",
+    "first_name": "Robert",
+    "last_name": "Rodriguez",
+    "specialty": "Family Medicine",
+    "phone": "464-254-6279",
+    "email": "robert.rodriguez@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "518 Cedar Dr",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "94802"
+    },
+    "address_line1": "518 Cedar Dr",
+    "address_line2": "Suite 287",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "94802",
+    "license_number": "NY172531",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 179,
+    "npi": "5031872849",
+    "name": "Dr. Mary Rodriguez",
+    "first_name": "Mary",
+    "last_name": "Rodriguez",
+    "specialty": "General Practice",
+    "phone": "763-399-8762",
+    "email": "mary.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "1685 Elm St",
+      "line2": "Suite 252",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "76291"
+    },
+    "address_line1": "1685 Elm St",
+    "address_line2": "Suite 609",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "76291",
+    "license_number": "TX872495",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 180,
+    "npi": "8951491547",
+    "name": "Dr. Richard Jones",
+    "first_name": "Richard",
+    "last_name": "Jones",
+    "specialty": "Neurology",
+    "phone": "210-872-2648",
+    "email": "richard.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "7792 Washington Ct",
+      "line2": "",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "53092"
+    },
+    "address_line1": "7792 Washington Ct",
+    "address_line2": "Suite 836",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "53092",
+    "license_number": "TX286927",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Neurology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2011
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 181,
+    "npi": "8796299541",
+    "name": "Dr. Robert Garcia",
+    "first_name": "Robert",
+    "last_name": "Garcia",
+    "specialty": "Family Medicine",
+    "phone": "414-640-6799",
+    "email": "robert.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "64138"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "64138",
+    "license_number": "TX859845",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2014
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 182,
+    "npi": "9588755834",
+    "name": "Dr. Patricia Johnson",
+    "first_name": "Patricia",
+    "last_name": "Johnson",
+    "specialty": "Urology",
+    "phone": "111-111-1111",
+    "email": "patricia.johnson@healthcare.com",
+    "website": "https://www.drjohnsonpractice.com",
+    "address": {
+      "line1": "4153 Elm Ct",
+      "line2": "Suite 586",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "13879"
+    },
+    "address_line1": "4153 Elm Ct",
+    "address_line2": "",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "13879",
+    "license_number": "CA935510",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 183,
+    "npi": "6348059893",
+    "name": "Dr. Jennifer Hernandez",
+    "first_name": "Jennifer",
+    "last_name": "Hernandez",
+    "specialty": "Obstetrics and Gynecology",
+    "phone": "511-543-5293",
+    "email": "jennifer.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "2642 Lake Ave",
+      "line2": "",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "68453"
+    },
+    "address_line1": "2642 Lake Ave",
+    "address_line2": "Suite 104",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "68453",
+    "license_number": "AZ727180",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Obstetrics and Gynecology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 184,
+    "npi": "4820346703",
+    "name": "Dr. Michael Wilson",
+    "first_name": "Michael",
+    "last_name": "Wilson",
+    "specialty": "Orthopedic Surgery",
+    "phone": "731-690-3544",
+    "email": "michael.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "9034 Cedar Way",
+      "line2": "Suite 651",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "61087"
+    },
+    "address_line1": "9034 Cedar Way",
+    "address_line2": "",
+    "city": "Houston",
+    "state": "TX",
+    "zip_code": "61087",
+    "license_number": "TX416340",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2013
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 1996
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 185,
+    "npi": "8197400543",
+    "name": "Dr. Jessica Miller",
+    "first_name": "Jessica",
+    "last_name": "Miller",
+    "specialty": "Anesthesiology",
+    "phone": "525-592-6014",
+    "email": "jessica.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "8058 Madison Blvd",
+      "line2": "Suite 413",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "11741"
+    },
+    "address_line1": "8058 Madison Blvd",
+    "address_line2": "Suite 565",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "11741",
+    "license_number": "AZ448610",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2010
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2001
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 186,
+    "npi": "2508731726",
+    "name": "Dr. William Jones",
+    "first_name": "William",
+    "last_name": "Jones",
+    "specialty": "Orthopedic Surgery",
+    "phone": "858-557-7050",
+    "email": "william.jones@healthcare.com",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "48904"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "48904",
+    "license_number": "TX301346",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Orthopedic Surgery",
+        "year": 2006
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2015
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 187,
+    "npi": "4385535282",
+    "name": "Dr. James Lopez",
+    "first_name": "James",
+    "last_name": "Lopez",
+    "specialty": "Gastroenterology",
+    "phone": "811-970-4504",
+    "email": "james.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "79423"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "79423",
+    "license_number": "NC834965",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Gastroenterology",
+        "year": 2008
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2010
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 188,
+    "npi": "9945800700",
+    "name": "Dr. Robert Williams",
+    "first_name": "Robert",
+    "last_name": "Williams",
+    "specialty": "Family Medicine",
+    "phone": "835-479-9240",
+    "email": "robert.williams@healthcare.com",
+    "website": "",
+    "address": {
+      "line1": "3151 Pine St",
+      "line2": "Suite 343",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "90643"
+    },
+    "address_line1": "3151 Pine St",
+    "address_line2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "90643",
+    "license_number": "TX709945",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2018
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 189,
+    "npi": "3299849552",
+    "name": "Dr. Richard Hernandez",
+    "first_name": "Richard",
+    "last_name": "Hernandez",
+    "specialty": "General Practice",
+    "phone": "787-380-9770",
+    "email": "richard.hernandez@healthcare.com",
+    "website": "https://www.drhernandezpractice.com",
+    "address": {
+      "line1": "1548 Elm Ave",
+      "line2": "Suite 109",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "40066"
+    },
+    "address_line1": "1548 Elm Ave",
+    "address_line2": "",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip_code": "40066",
+    "license_number": "PA500136",
+    "license_state": "PA",
+    "board_certifications": [
+      {
+        "board": "American Board of Family Medicine",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 190,
+    "npi": "7623995171",
+    "name": "Dr. Elizabeth Smith",
+    "first_name": "Elizabeth",
+    "last_name": "Smith",
+    "specialty": "Radiology",
+    "phone": "592-000-0000",
+    "email": "elizabeth.smith@healthcare.com",
+    "website": "https://www.drsmithpractice.com",
+    "address": {
+      "line1": "2446 Madison Way",
+      "line2": "Suite 583",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "32911"
+    },
+    "address_line1": "2446 Madison Way",
+    "address_line2": "Suite 730",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "32911",
+    "license_number": "TX552082",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2013
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 191,
+    "npi": "7763866332",
+    "name": "Dr. Elizabeth Rodriguez",
+    "first_name": "Elizabeth",
+    "last_name": "Rodriguez",
+    "specialty": "Anesthesiology",
+    "phone": "220-271-7268",
+    "email": "elizabeth.rodriguez@healthcare.com",
+    "website": "https://www.drrodriguezpractice.com",
+    "address": {
+      "line1": "9869 Oak Rd",
+      "line2": "Suite 197",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "76032"
+    },
+    "address_line1": "9869 Oak Rd",
+    "address_line2": "Suite 396",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip_code": "76032",
+    "license_number": "TX792185",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2000
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 192,
+    "npi": "5833973104",
+    "name": "Dr. William Anderson",
+    "first_name": "William",
+    "last_name": "Anderson",
+    "specialty": "Anesthesiology",
+    "phone": "998-363-7134",
+    "email": "william.anderson@healthcare.com",
+    "website": "https://www.drandersonpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Dallas",
+      "state": "TX",
+      "zip_code": "14733"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "Suite 712",
+    "city": "Dallas",
+    "state": "TX",
+    "zip_code": "14733",
+    "license_number": "TX364363",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2011
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2008
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 193,
+    "npi": "2992729978",
+    "name": "Dr. John Garcia",
+    "first_name": "John",
+    "last_name": "Garcia",
+    "specialty": "Dermatology",
+    "phone": "222-479-9961",
+    "email": "john.garcia@healthcare.com",
+    "website": "https://www.drgarciapractice.com",
+    "address": {
+      "line1": "712 Elm Ln",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "40936"
+    },
+    "address_line1": "712 Elm Ln",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "40936",
+    "license_number": "NY994189",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2019
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1997
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 194,
+    "npi": "3461849315",
+    "name": "Dr. John Thomas",
+    "first_name": "John",
+    "last_name": "Thomas",
+    "specialty": "Urology",
+    "phone": "626-685-7338",
+    "email": "john.thomas@healthcare.com",
+    "website": "https://www.drthomaspractice.com",
+    "address": {
+      "line1": "8727 Third Dr",
+      "line2": "",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "45010"
+    },
+    "address_line1": "8727 Third Dr",
+    "address_line2": "Suite 924",
+    "city": "Austin",
+    "state": "TX",
+    "zip_code": "45010",
+    "license_number": "TX771007",
+    "license_state": "TX",
+    "board_certifications": [
+      {
+        "board": "American Board of Urology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 2005
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 195,
+    "npi": "6812991117",
+    "name": "Dr. Susan Davis",
+    "first_name": "Susan",
+    "last_name": "Davis",
+    "specialty": "Oncology",
+    "phone": "975-434-2214",
+    "email": "susan.davis@healthcare.com",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "2234 First Way",
+      "line2": "Suite 641",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "86278"
+    },
+    "address_line1": "2234 First Way",
+    "address_line2": "Suite 730",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip_code": "86278",
+    "license_number": "AZ690317",
+    "license_state": "AZ",
+    "board_certifications": [
+      {
+        "board": "American Board of Oncology",
+        "year": 2015
+      }
+    ],
+    "education": [
+      {
+        "institution": "Yale University",
+        "degree": "MD",
+        "year": 2009
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 196,
+    "npi": "9657583931",
+    "name": "Dr. Mary Miller",
+    "first_name": "Mary",
+    "last_name": "Miller",
+    "specialty": "Radiology",
+    "phone": "609-528-1410",
+    "email": "mary.miller@healthcare.com",
+    "website": "https://www.drmillerpractice.com",
+    "address": {
+      "line1": "1514 Madison Rd",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "12465"
+    },
+    "address_line1": "1514 Madison Rd",
+    "address_line2": "",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "12465",
+    "license_number": "NY376064",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Radiology",
+        "year": 2016
+      }
+    ],
+    "education": [
+      {
+        "institution": "Johns Hopkins University",
+        "degree": "MD",
+        "year": 1995
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 197,
+    "npi": "1980272047",
+    "name": "Dr. Susan Lopez",
+    "first_name": "Susan",
+    "last_name": "Lopez",
+    "specialty": "Dermatology",
+    "phone": "561-926-8683",
+    "email": "susan.lopez@healthcare.com",
+    "website": "https://www.drlopezpractice.com",
+    "address": {
+      "line1": "Old Address",
+      "line2": "",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip_code": "90713"
+    },
+    "address_line1": "Old Address",
+    "address_line2": "",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip_code": "90713",
+    "license_number": "NC200589",
+    "license_state": "NC",
+    "board_certifications": [
+      {
+        "board": "American Board of Dermatology",
+        "year": 2017
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 1998
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 198,
+    "npi": "4670319968",
+    "name": "Dr. Michael Davis",
+    "first_name": "Michael",
+    "last_name": "Davis",
+    "specialty": "Cardiology",
+    "phone": "368-532-3406",
+    "email": "",
+    "website": "https://www.drdavispractice.com",
+    "address": {
+      "line1": "818 Washington Blvd",
+      "line2": "",
+      "city": "San Jose",
+      "state": "CA",
+      "zip_code": "55125"
+    },
+    "address_line1": "818 Washington Blvd",
+    "address_line2": "",
+    "city": "San Jose",
+    "state": "CA",
+    "zip_code": "55125",
+    "license_number": "CA762797",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Cardiology",
+        "year": 2014
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2002
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 199,
+    "npi": "3371696042",
+    "name": "Dr. Robert Wilson",
+    "first_name": "Robert",
+    "last_name": "Wilson",
+    "specialty": "Emergency Medicine",
+    "phone": "770-664-1447",
+    "email": "robert.wilson@healthcare.com",
+    "website": "https://www.drwilsonpractice.com",
+    "address": {
+      "line1": "6325 Elm Ave",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "98449"
+    },
+    "address_line1": "6325 Elm Ave",
+    "address_line2": "Suite 647",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "98449",
+    "license_number": "NY843609",
+    "license_state": "NY",
+    "board_certifications": [
+      {
+        "board": "American Board of Emergency Medicine",
+        "year": 2005
+      }
+    ],
+    "education": [
+      {
+        "institution": "Harvard University",
+        "degree": "MD",
+        "year": 2004
+      }
+    ],
+    "is_active": true
+  },
+  {
+    "id": 200,
+    "npi": "3488355704",
+    "name": "Dr. Patricia Jones",
+    "first_name": "Patricia",
+    "last_name": "Jones",
+    "specialty": "Anesthesiology",
+    "phone": "962-665-7225",
+    "email": "",
+    "website": "https://www.drjonespractice.com",
+    "address": {
+      "line1": "3059 Washington Way",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "21865"
+    },
+    "address_line1": "3059 Washington Way",
+    "address_line2": "Suite 146",
+    "city": "San Diego",
+    "state": "CA",
+    "zip_code": "21865",
+    "license_number": "CA511109",
+    "license_state": "CA",
+    "board_certifications": [
+      {
+        "board": "American Board of Anesthesiology",
+        "year": 2009
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "MD",
+        "year": 2003
+      }
+    ],
+    "is_active": true
+  }
+]
